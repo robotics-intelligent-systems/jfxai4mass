@@ -1,0 +1,35 @@
+<mxfile host="Electron" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/28.2.5 Chrome/138.0.7204.251 Electron/37.6.1 Safari/537.36" version="28.2.5" pages="2">
+  <diagram name="car-control-framework" id="BPhBTnQk-L_2zVg7U-a4">
+    <mxGraphModel dx="1111" dy="537" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="JUEOu1lw0mxa1UuItJrC-1" value="Car Control Framework" style="shape=umlFrame;whiteSpace=wrap;html=1;pointerEvents=0;recursiveResize=0;container=1;collapsible=0;width=160;" parent="1" vertex="1">
+          <mxGeometry x="50" y="50" width="730" height="390" as="geometry" />
+        </mxCell>
+        <mxCell id="JUEOu1lw0mxa1UuItJrC-3" value="api" style="shape=folder;fontStyle=1;tabWidth=110;tabHeight=30;tabPosition=left;html=1;boundedLbl=1;labelInHeader=1;container=1;collapsible=0;recursiveResize=0;whiteSpace=wrap;" parent="JUEOu1lw0mxa1UuItJrC-1" vertex="1">
+          <mxGeometry x="70" y="70" width="150" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="JUEOu1lw0mxa1UuItJrC-4" value="oscc" style="html=1;whiteSpace=wrap;" parent="JUEOu1lw0mxa1UuItJrC-3" vertex="1">
+          <mxGeometry width="110" height="30" relative="1" as="geometry">
+            <mxPoint x="20" y="50" as="offset" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="IdrOJNuLKRH3pTqnNETF" name="armored-vehicle-engineering-simulator ">
+    <mxGraphModel dx="1111" dy="537" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="_5SySibAGKxPtcIuATZO-1" value="AVES Architecture" style="shape=umlFrame;whiteSpace=wrap;html=1;pointerEvents=0;recursiveResize=0;container=1;collapsible=0;width=160;" vertex="1" parent="1">
+          <mxGeometry x="240" y="190" width="340" height="180" as="geometry" />
+        </mxCell>
+        <mxCell id="_5SySibAGKxPtcIuATZO-2" value="Vehicle Dynamics" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="350" y="250" width="120" height="60" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
