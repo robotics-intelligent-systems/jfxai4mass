@@ -1,0 +1,330 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mxfile host="app.diagrams.net" modified="2026-09-12T00:00:00.000Z" agent="Codex" version="31.4.2" type="device" compressed="false" pages="5">
+  <diagram id="mass-req-baseline" name="01 - Requirements Baseline">
+    <mxGraphModel dx="1600" dy="1000" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1600" pageHeight="1000" math="0" shadow="0">
+      <root>
+        <mxCell id="p1_0"/>
+        <mxCell id="p1_1" parent="p1_0"/>
+        <mxCell id="p1_title" value="&lt;b&gt;OpenTwin MASS — High-Level Technical Requirements&lt;/b&gt;&lt;br&gt;All-electric modular ground platform with optional multi-mission UAV" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#0f172a;strokeColor=#0f172a;fontColor=#ffffff;fontSize=21;fontStyle=1;align=left;verticalAlign=middle;spacingLeft=16;" vertex="1" parent="p1_1">
+          <mxGeometry x="30" y="20" width="1540" height="62" as="geometry"/>
+        </mxCell>
+        <mxCell id="p1_subtitle" value="&lt;b&gt;System boundary:&lt;/b&gt; open, modular, interoperable mobility and aerial systems — conceptual baseline for MBSE allocation and verification planning" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e0f2fe;strokeColor=#0284c7;fontColor=#0c4a6e;fontSize=13;align=left;verticalAlign=middle;spacingLeft=12;" vertex="1" parent="p1_1">
+          <mxGeometry x="30" y="94" width="1540" height="42" as="geometry"/>
+        </mxCell>
+        <mxCell id="p1_source" value="&lt;b&gt;Reference concept&lt;/b&gt;&lt;br&gt;all-electric-modular-flying-car-concept.jpg&lt;br&gt;&lt;br&gt;Repository: robotics-intelligent-systems/jfxai4mass&lt;br&gt;Source path: MBSE/CAD" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f1f5f9;strokeColor=#64748b;fontColor=#1e293b;fontSize=12;align=left;verticalAlign=top;spacing=9;" vertex="1" parent="p1_1" link="https://github.com/robotics-intelligent-systems/jfxai4mass/blob/main/MBSE/CAD/all-electric-modular-flying-car-concept.jpg">
+          <mxGeometry x="30" y="155" width="390" height="135" as="geometry"/>
+        </mxCell>
+        <mxCell id="p1_mission" value="&lt;b&gt;R-01 — Mission need&lt;/b&gt;&lt;br&gt;Support multiple ground and aerial mobility missions through one reusable platform and interchangeable modules.&lt;br&gt;&lt;br&gt;&lt;b&gt;Actors:&lt;/b&gt; operator, maintainer, mission planner" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ecfeff;strokeColor=#0891b2;fontColor=#164e63;fontSize=12;align=left;verticalAlign=top;spacing=9;" vertex="1" parent="p1_1">
+          <mxGeometry x="445" y="155" width="350" height="135" as="geometry"/>
+        </mxCell>
+        <mxCell id="p1_soi" value="&lt;b&gt;SYSTEM OF INTEREST&lt;/b&gt;&lt;br&gt;OpenTwin MASS&lt;br&gt;&lt;br&gt;All-electric modular ground vehicle, optional detachable UAV, payload bay, digital twin and open control/data interfaces." style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dbeafe;strokeColor=#2563eb;fontColor=#172554;fontSize=12;align=left;verticalAlign=top;spacing=9;" vertex="1" parent="p1_1">
+          <mxGeometry x="820" y="155" width="350" height="135" as="geometry"/>
+        </mxCell>
+        <mxCell id="p1_constraints" value="&lt;b&gt;R-02 — Architecture constraints&lt;/b&gt;&lt;br&gt;Open source, modular, interoperable and technology-neutral; avoid mandatory vendor lock-in.&lt;br&gt;&lt;br&gt;Interfaces shall be replaceable and versioned." style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fef3c7;strokeColor=#d97706;fontColor=#78350f;fontSize=12;align=left;verticalAlign=top;spacing=9;" vertex="1" parent="p1_1">
+          <mxGeometry x="1195" y="155" width="375" height="135" as="geometry"/>
+        </mxCell>
+        <mxCell id="p1_e1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeColor=#64748b;" edge="1" parent="p1_1" source="p1_mission" target="p1_soi">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="p1_e2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeColor=#64748b;" edge="1" parent="p1_1" source="p1_soi" target="p1_constraints">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="p1_energy" value="&lt;b&gt;R-03 — All-electric energy&lt;/b&gt;&lt;br&gt;Provide modular energy storage, power distribution, battery management, thermal management and safe service isolation.&lt;br&gt;&lt;br&gt;Evidence: energy model, BMS tests, abuse and isolation tests." style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dcfce7;strokeColor=#16a34a;fontColor=#14532d;fontSize=12;align=left;verticalAlign=top;spacing=9;" vertex="1" parent="p1_1">
+          <mxGeometry x="30" y="330" width="360" height="185" as="geometry"/>
+        </mxCell>
+        <mxCell id="p1_modularity" value="&lt;b&gt;R-04 — Modular payload bay&lt;/b&gt;&lt;br&gt;Accommodate interchangeable cargo, research, rescue, utility and UAV payloads through defined mechanical, electrical and data interfaces.&lt;br&gt;&lt;br&gt;Evidence: interface control document and fit/function test." style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffedd5;strokeColor=#ea580c;fontColor=#7c2d12;fontSize=12;align=left;verticalAlign=top;spacing=9;" vertex="1" parent="p1_1">
+          <mxGeometry x="410" y="330" width="360" height="185" as="geometry"/>
+        </mxCell>
+        <mxCell id="p1_autonomy" value="&lt;b&gt;R-05 — Drive-by-wire and autonomy&lt;/b&gt;&lt;br&gt;Support deterministic vehicle control, state estimation, operator override and autonomous-ready control interfaces.&lt;br&gt;&lt;br&gt;Evidence: control model, SIL/HIL, ground test and fault injection." style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ede9fe;strokeColor=#7c3aed;fontColor=#4c1d95;fontSize=12;align=left;verticalAlign=top;spacing=9;" vertex="1" parent="p1_1">
+          <mxGeometry x="790" y="330" width="360" height="185" as="geometry"/>
+        </mxCell>
+        <mxCell id="p1_open" value="&lt;b&gt;R-06 — Open integration&lt;/b&gt;&lt;br&gt;Expose replaceable interfaces for ROS 2, vehicle API, telemetry, V2X, edge compute and optional cloud services.&lt;br&gt;&lt;br&gt;Evidence: protocol conformance, API tests and interoperability demonstration." style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e0f2fe;strokeColor=#0284c7;fontColor=#0c4a6e;fontSize=12;align=left;verticalAlign=top;spacing=9;" vertex="1" parent="p1_1">
+          <mxGeometry x="1190" y="330" width="380" height="185" as="geometry"/>
+        </mxCell>
+        <mxCell id="p1_sim" value="&lt;b&gt;R-07 — Digital twin and physics&lt;/b&gt;&lt;br&gt;Maintain executable Modelica and multiphysics models linked to configuration, telemetry, scenarios and measured data.&lt;br&gt;&lt;br&gt;Evidence: model review, co-simulation and correlation report." style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f0fdf4;strokeColor=#22c55e;fontColor=#166534;fontSize=12;align=left;verticalAlign=top;spacing=9;" vertex="1" parent="p1_1">
+          <mxGeometry x="30" y="545" width="360" height="185" as="geometry"/>
+        </mxCell>
+        <mxCell id="p1_safety" value="&lt;b&gt;R-08 — Safety and degraded modes&lt;/b&gt;&lt;br&gt;Detect faults, isolate hazards, preserve controllability and transition to defined safe ground or flight modes.&lt;br&gt;&lt;br&gt;Evidence: hazard analysis, FMEA/FTA, fault injection and safe-mode demonstration." style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fee2e2;strokeColor=#dc2626;fontColor=#7f1d1d;fontSize=12;align=left;verticalAlign=top;spacing=9;" vertex="1" parent="p1_1">
+          <mxGeometry x="410" y="545" width="360" height="185" as="geometry"/>
+        </mxCell>
+        <mxCell id="p1_ops" value="&lt;b&gt;R-09 — Multi-domain operations&lt;/b&gt;&lt;br&gt;Coordinate ground vehicle, detachable UAV, payload and mission-control states with explicit mode isolation and authority management.&lt;br&gt;&lt;br&gt;Evidence: state machine, scenario replay and integrated demonstration." style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fefce8;strokeColor=#ca8a04;fontColor=#713f12;fontSize=12;align=left;verticalAlign=top;spacing=9;" vertex="1" parent="p1_1">
+          <mxGeometry x="790" y="545" width="360" height="185" as="geometry"/>
+        </mxCell>
+        <mxCell id="p1_env" value="&lt;b&gt;R-10 — Environment and sustainability&lt;/b&gt;&lt;br&gt;Define environmental envelope, maintainability, energy efficiency, battery lifecycle, serviceability and responsible material choices.&lt;br&gt;&lt;br&gt;Evidence: environmental analysis, maintainability demonstration and lifecycle assessment." style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f1f5f9;strokeColor=#475569;fontColor=#1e293b;fontSize=12;align=left;verticalAlign=top;spacing=9;" vertex="1" parent="p1_1">
+          <mxGeometry x="1190" y="545" width="380" height="185" as="geometry"/>
+        </mxCell>
+        <mxCell id="p1_tbd" value="&lt;b&gt;TBD — Performance allocation before design freeze&lt;/b&gt;&lt;br&gt;Mass, dimensions, payload, ground speed, flight speed and altitude, range/endurance, energy capacity and voltage, recharge/swap time, wind/temperature/precipitation envelope, noise, communication latency, availability and safety targets.&lt;br&gt;&lt;br&gt;Each value requires an owner, rationale, model reference, verification method and acceptance threshold." style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff7ed;strokeColor=#f97316;fontColor=#7c2d12;fontSize=13;align=left;verticalAlign=top;spacing=10;" vertex="1" parent="p1_1">
+          <mxGeometry x="30" y="760" width="1540" height="135" as="geometry"/>
+        </mxCell>
+        <mxCell id="p1_note" value="&lt;b&gt;Baseline status:&lt;/b&gt; conceptual requirements for MBSE and simulation planning. The diagram is not a certified aircraft, automotive design or manufacturing drawing; operational values require independent engineering, safety and regulatory review." style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e2e8f0;strokeColor=#64748b;fontColor=#334155;fontSize=11;align=left;verticalAlign=middle;spacingLeft=10;" vertex="1" parent="p1_1">
+          <mxGeometry x="30" y="920" width="1540" height="45" as="geometry"/>
+        </mxCell>
+        <mxCell id="p1_e3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;dashed=1;endArrow=block;endFill=1;strokeColor=#94a3b8;" edge="1" parent="p1_1" source="p1_soi" target="p1_energy">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="p1_e4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;dashed=1;endArrow=block;endFill=1;strokeColor=#94a3b8;" edge="1" parent="p1_1" source="p1_soi" target="p1_modularity">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="p1_e5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;dashed=1;endArrow=block;endFill=1;strokeColor=#94a3b8;" edge="1" parent="p1_1" source="p1_soi" target="p1_autonomy">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="p1_e6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;dashed=1;endArrow=block;endFill=1;strokeColor=#94a3b8;" edge="1" parent="p1_1" source="p1_soi" target="p1_sim">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="p1_e7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;dashed=1;endArrow=block;endFill=1;strokeColor=#94a3b8;" edge="1" parent="p1_1" source="p1_soi" target="p1_safety">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="p1_e8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;dashed=1;endArrow=block;endFill=1;strokeColor=#94a3b8;" edge="1" parent="p1_1" source="p1_soi" target="p1_ops">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="p1_e9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;dashed=1;endArrow=block;endFill=1;strokeColor=#94a3b8;" edge="1" parent="p1_1" source="p1_soi" target="p1_env">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="mass-architecture" name="02 - Functional and Physical Architecture">
+    <mxGraphModel dx="1600" dy="1000" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1600" pageHeight="1000" math="0" shadow="0">
+      <root>
+        <mxCell id="p2_0"/>
+        <mxCell id="p2_1" parent="p2_0"/>
+        <mxCell id="p2_title" value="&lt;b&gt;Functional and Physical Architecture&lt;/b&gt;&lt;br&gt;Allocation of the concept into replaceable subsystems and interfaces" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#0f172a;strokeColor=#0f172a;fontColor=#ffffff;fontSize=21;fontStyle=1;align=left;verticalAlign=middle;spacingLeft=16;" vertex="1" parent="p2_1">
+          <mxGeometry x="30" y="20" width="1540" height="62" as="geometry"/>
+        </mxCell>
+        <mxCell id="p2_context" value="&lt;b&gt;Concept cues:&lt;/b&gt; modular design · open interfaces · Modelica simulation · open-source AI · edge and cloud · sustainable mobility · ground vehicle + detachable multi-mission UAV" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e0f2fe;strokeColor=#0284c7;fontColor=#0c4a6e;fontSize=13;align=left;verticalAlign=middle;spacingLeft=12;" vertex="1" parent="p2_1">
+          <mxGeometry x="30" y="94" width="1540" height="42" as="geometry"/>
+        </mxCell>
+        <mxCell id="p2_ground_boundary" value="&lt;b&gt;GROUND MODULAR PLATFORM&lt;/b&gt;&lt;br&gt;Vehicle structure, energy, payload, sensing, control and data services" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f0fdf4;strokeColor=#16a34a;dashed=1;fontColor=#166534;fontSize=15;fontStyle=1;align=left;verticalAlign=top;spacing=10;" vertex="1" parent="p2_1">
+          <mxGeometry x="30" y="175" width="930" height="565" as="geometry"/>
+        </mxCell>
+        <mxCell id="p2_uav_boundary" value="&lt;b&gt;OPTIONAL AERIAL MODULE&lt;/b&gt;&lt;br&gt;Detachable UAV, mission payload and autonomous-flight services" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#eff6ff;strokeColor=#2563eb;dashed=1;fontColor=#1e3a8a;fontSize=15;fontStyle=1;align=left;verticalAlign=top;spacing=10;" vertex="1" parent="p2_1">
+          <mxGeometry x="990" y="175" width="580" height="565" as="geometry"/>
+        </mxCell>
+        <mxCell id="p2_chassis" value="&lt;b&gt;S-01 Structure and mobility&lt;/b&gt;&lt;br&gt;Chassis, wheels, electric traction, suspension, mechanical mounting and service access.&lt;br&gt;&lt;br&gt;Allocates R-03, R-04, R-10" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#16a34a;fontColor=#14532d;fontSize=12;align=left;verticalAlign=top;spacing=8;" vertex="1" parent="p2_1">
+          <mxGeometry x="60" y="240" width="255" height="125" as="geometry"/>
+        </mxCell>
+        <mxCell id="p2_energy" value="&lt;b&gt;S-02 Energy module&lt;/b&gt;&lt;br&gt;Swappable battery, BMS, power electronics, distribution bus, thermal control and isolation.&lt;br&gt;&lt;br&gt;Allocates R-03, R-08" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dcfce7;strokeColor=#22c55e;fontColor=#14532d;fontSize=12;align=left;verticalAlign=top;spacing=8;" vertex="1" parent="p2_1">
+          <mxGeometry x="350" y="240" width="255" height="125" as="geometry"/>
+        </mxCell>
+        <mxCell id="p2_payload" value="&lt;b&gt;S-03 Payload bay&lt;/b&gt;&lt;br&gt;Interchangeable cargo, research, rescue, utility or UAV payload with mechanical, power and data ICDs.&lt;br&gt;&lt;br&gt;Allocates R-04, R-09" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffedd5;strokeColor=#ea580c;fontColor=#7c2d12;fontSize=12;align=left;verticalAlign=top;spacing=8;" vertex="1" parent="p2_1">
+          <mxGeometry x="640" y="240" width="255" height="125" as="geometry"/>
+        </mxCell>
+        <mxCell id="p2_control" value="&lt;b&gt;S-04 Edge AI and control&lt;/b&gt;&lt;br&gt;State estimation, vehicle control, perception, planning hooks, health monitoring and operator override.&lt;br&gt;&lt;br&gt;ROS 2 · open-source AI · edge compute" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ede9fe;strokeColor=#7c3aed;fontColor=#4c1d95;fontSize=12;align=left;verticalAlign=top;spacing=8;" vertex="1" parent="p2_1">
+          <mxGeometry x="60" y="405" width="255" height="135" as="geometry"/>
+        </mxCell>
+        <mxCell id="p2_sensors" value="&lt;b&gt;S-05 Sensor suite&lt;/b&gt;&lt;br&gt;LiDAR, vision, IoT, GNSS/IMU and vehicle-state signals with time synchronization and diagnostics.&lt;br&gt;&lt;br&gt;Allocates R-05, R-08" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fefce8;strokeColor=#ca8a04;fontColor=#713f12;fontSize=12;align=left;verticalAlign=top;spacing=8;" vertex="1" parent="p2_1">
+          <mxGeometry x="350" y="405" width="255" height="135" as="geometry"/>
+        </mxCell>
+        <mxCell id="p2_comms" value="&lt;b&gt;S-06 Communications and data&lt;/b&gt;&lt;br&gt;Vehicle network, telemetry, V2X, mission link, logging and secure interfaces to external services.&lt;br&gt;&lt;br&gt;Allocates R-06, R-09" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e0f2fe;strokeColor=#0284c7;fontColor=#0c4a6e;fontSize=12;align=left;verticalAlign=top;spacing=8;" vertex="1" parent="p2_1">
+          <mxGeometry x="640" y="405" width="255" height="135" as="geometry"/>
+        </mxCell>
+        <mxCell id="p2_api" value="&lt;b&gt;S-07 Vehicle and payload API&lt;/b&gt;&lt;br&gt;Versioned command, state, health, power, payload and docking contracts.&lt;br&gt;&lt;br&gt;Primary boundary for replaceability and configuration control" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#475569;fontColor=#1e293b;fontSize=12;align=left;verticalAlign=top;spacing=8;" vertex="1" parent="p2_1">
+          <mxGeometry x="350" y="590" width="255" height="105" as="geometry"/>
+        </mxCell>
+        <mxCell id="p2_uav" value="&lt;b&gt;S-08 Multi-mission UAV&lt;/b&gt;&lt;br&gt;Electric aerial module with airframe, motors, energy interface, landing gear and payload attachment.&lt;br&gt;&lt;br&gt;Optional configuration" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dbeafe;strokeColor=#2563eb;fontColor=#1e3a8a;fontSize=12;align=left;verticalAlign=top;spacing=8;" vertex="1" parent="p2_1">
+          <mxGeometry x="1020" y="245" width="245" height="125" as="geometry"/>
+        </mxCell>
+        <mxCell id="p2_uavctrl" value="&lt;b&gt;S-09 Flight control&lt;/b&gt;&lt;br&gt;Autonomous flight, stabilization, navigation, geofencing, command authority and degraded modes.&lt;br&gt;&lt;br&gt;ROS 2 · PX4 or replaceable equivalent" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ede9fe;strokeColor=#7c3aed;fontColor=#4c1d95;fontSize=12;align=left;verticalAlign=top;spacing=8;" vertex="1" parent="p2_1">
+          <mxGeometry x="1305" y="245" width="235" height="125" as="geometry"/>
+        </mxCell>
+        <mxCell id="p2_uavpayload" value="&lt;b&gt;S-10 Aerial payload and sensors&lt;/b&gt;&lt;br&gt;Interchangeable mission payloads with vision/LiDAR/IoT sensing, health reporting and safe release/return behavior." style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffedd5;strokeColor=#ea580c;fontColor=#7c2d12;fontSize=12;align=left;verticalAlign=top;spacing=8;" vertex="1" parent="p2_1">
+          <mxGeometry x="1020" y="430" width="245" height="130" as="geometry"/>
+        </mxCell>
+        <mxCell id="p2_uavsensors" value="&lt;b&gt;S-11 Flight sensing and navigation&lt;/b&gt;&lt;br&gt;IMU, GNSS, altitude/position sensing, obstacle awareness and telemetry synchronization.&lt;br&gt;&lt;br&gt;Allocates R-05, R-08" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fefce8;strokeColor=#ca8a04;fontColor=#713f12;fontSize=12;align=left;verticalAlign=top;spacing=8;" vertex="1" parent="p2_1">
+          <mxGeometry x="1305" y="430" width="235" height="130" as="geometry"/>
+        </mxCell>
+        <mxCell id="p2_dock" value="&lt;b&gt;S-12 Docking and transfer interface&lt;/b&gt;&lt;br&gt;Mechanical retention, power transfer, data/control hand-off, identification, interlocks and release confirmation." style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dbeafe;strokeColor=#2563eb;fontColor=#1e3a8a;fontSize=12;align=left;verticalAlign=top;spacing=8;" vertex="1" parent="p2_1">
+          <mxGeometry x="1110" y="610" width="360" height="90" as="geometry"/>
+        </mxCell>
+        <mxCell id="p2_e1" value="power" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeColor=#16a34a;fontColor=#166534;fontSize=10;" edge="1" parent="p2_1" source="p2_energy" target="p2_chassis">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="p2_e2" value="power bus" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeColor=#16a34a;fontColor=#166534;fontSize=10;" edge="1" parent="p2_1" source="p2_energy" target="p2_control">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="p2_e3" value="sensor data" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeColor=#ca8a04;fontColor=#713f12;fontSize=10;" edge="1" parent="p2_1" source="p2_sensors" target="p2_control">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="p2_e4" value="commands / state" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeColor=#7c3aed;fontColor=#4c1d95;fontSize=10;" edge="1" parent="p2_1" source="p2_control" target="p2_api">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="p2_e5" value="payload ICD" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeColor=#ea580c;fontColor=#7c2d12;fontSize=10;" edge="1" parent="p2_1" source="p2_payload" target="p2_api">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="p2_e6" value="telemetry" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeColor=#0284c7;fontColor=#0c4a6e;fontSize=10;" edge="1" parent="p2_1" source="p2_comms" target="p2_api">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="p2_e7" value="mechanical / power / data" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeColor=#2563eb;fontColor=#1e3a8a;fontSize=10;" edge="1" parent="p2_1" source="p2_payload" target="p2_dock">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="p2_e8" value="docking" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeColor=#2563eb;fontColor=#1e3a8a;fontSize=10;" edge="1" parent="p2_1" source="p2_dock" target="p2_uav">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="p2_e9" value="flight data" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeColor=#7c3aed;fontColor=#4c1d95;fontSize=10;" edge="1" parent="p2_1" source="p2_uavsensors" target="p2_uavctrl">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="p2_e10" value="mission payload" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeColor=#ea580c;fontColor=#7c2d12;fontSize=10;" edge="1" parent="p2_1" source="p2_uavpayload" target="p2_uavctrl">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="p2_twin" value="&lt;b&gt;E-01 Digital twin&lt;/b&gt;&lt;br&gt;OpenTwin state, configuration, telemetry, model registry and scenario replay" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f0fdf4;strokeColor=#16a34a;fontColor=#166534;fontSize=12;align=left;verticalAlign=top;spacing=8;" vertex="1" parent="p2_1">
+          <mxGeometry x="30" y="800" width="460" height="100" as="geometry"/>
+        </mxCell>
+        <mxCell id="p2_sim" value="&lt;b&gt;E-02 Simulation toolchain&lt;/b&gt;&lt;br&gt;Modelica / OpenModelica, Gazebo, ROS 2, PX4, Python/OpenCV and reproducible scenario data" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ede9fe;strokeColor=#7c3aed;fontColor=#4c1d95;fontSize=12;align=left;verticalAlign=top;spacing=8;" vertex="1" parent="p2_1">
+          <mxGeometry x="520" y="800" width="460" height="100" as="geometry"/>
+        </mxCell>
+        <mxCell id="p2_ops" value="&lt;b&gt;E-03 External actors and services&lt;/b&gt;&lt;br&gt;Operator · mission planner · maintainer · edge/cloud services · manufacturing/service configuration · environment" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e0f2fe;strokeColor=#0284c7;fontColor=#0c4a6e;fontSize=12;align=left;verticalAlign=top;spacing=8;" vertex="1" parent="p2_1">
+          <mxGeometry x="1010" y="800" width="560" height="100" as="geometry"/>
+        </mxCell>
+        <mxCell id="p2_e11" value="state / telemetry" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;dashed=1;endArrow=block;endFill=1;strokeColor=#16a34a;fontColor=#166534;fontSize=10;" edge="1" parent="p2_1" source="p2_api" target="p2_twin">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="p2_e12" value="models / scenarios" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;dashed=1;endArrow=block;endFill=1;strokeColor=#7c3aed;fontColor=#4c1d95;fontSize=10;" edge="1" parent="p2_1" source="p2_twin" target="p2_sim">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="p2_e13" value="operations / service" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;dashed=1;endArrow=block;endFill=1;strokeColor=#0284c7;fontColor=#0c4a6e;fontSize=10;" edge="1" parent="p2_1" source="p2_twin" target="p2_ops">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="p2_note" value="&lt;b&gt;Interface rule:&lt;/b&gt; allocate every safety-critical command and state exchange to a versioned contract with ownership, timing, fault behavior, cybersecurity assumptions and a verification method." style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff7ed;strokeColor=#f97316;fontColor=#7c2d12;fontSize=11;align=left;verticalAlign=middle;spacingLeft=10;" vertex="1" parent="p2_1">
+          <mxGeometry x="30" y="930" width="1540" height="42" as="geometry"/>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="mass-traceability" name="03 - Requirements Traceability">
+    <mxGraphModel dx="1600" dy="1000" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1600" pageHeight="1000" math="0" shadow="0">
+      <root>
+        <mxCell id="p3_0"/>
+        <mxCell id="p3_1" parent="p3_0"/>
+        <mxCell id="p3_title" value="&lt;b&gt;Requirements Traceability and Allocation&lt;/b&gt;&lt;br&gt;High-level requirement → subsystem allocation → verification evidence" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#0f172a;strokeColor=#0f172a;fontColor=#ffffff;fontSize=21;fontStyle=1;align=left;verticalAlign=middle;spacingLeft=16;" vertex="1" parent="p3_1">
+          <mxGeometry x="30" y="20" width="1540" height="62" as="geometry"/>
+        </mxCell>
+        <mxCell id="p3_sub" value="Each row is a traceability slice. The acceptance threshold remains TBD until the analysis baseline is approved." style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e0f2fe;strokeColor=#0284c7;fontColor=#0c4a6e;fontSize=13;align=left;verticalAlign=middle;spacingLeft=12;" vertex="1" parent="p3_1">
+          <mxGeometry x="30" y="94" width="1540" height="42" as="geometry"/>
+        </mxCell>
+        <mxCell id="p3_h_req" value="&lt;b&gt;HIGH-LEVEL REQUIREMENT&lt;/b&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dbeafe;strokeColor=#2563eb;fontColor=#1e3a8a;fontSize=13;fontStyle=1;align=center;verticalAlign=middle;" vertex="1" parent="p3_1">
+          <mxGeometry x="30" y="155" width="480" height="42" as="geometry"/>
+        </mxCell>
+        <mxCell id="p3_h_alloc" value="&lt;b&gt;ALLOCATED SUBSYSTEM / INTERFACE&lt;/b&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dcfce7;strokeColor=#16a34a;fontColor=#14532d;fontSize=13;fontStyle=1;align=center;verticalAlign=middle;" vertex="1" parent="p3_1">
+          <mxGeometry x="550" y="155" width="480" height="42" as="geometry"/>
+        </mxCell>
+        <mxCell id="p3_h_ver" value="&lt;b&gt;VERIFICATION / VALIDATION EVIDENCE&lt;/b&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffedd5;strokeColor=#ea580c;fontColor=#7c2d12;fontSize=13;fontStyle=1;align=center;verticalAlign=middle;" vertex="1" parent="p3_1">
+          <mxGeometry x="1070" y="155" width="500" height="42" as="geometry"/>
+        </mxCell>
+        <mxCell id="p3_r1" value="&lt;b&gt;R-03&lt;/b&gt; All-electric energy with safe modular storage, power distribution, BMS and thermal management." style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#60a5fa;fontColor=#0f172a;fontSize=11;align=left;verticalAlign=middle;spacing=7;" vertex="1" parent="p3_1"><mxGeometry x="30" y="205" width="480" height="58" as="geometry"/></mxCell>
+        <mxCell id="p3_a1" value="&lt;b&gt;S-02&lt;/b&gt; Energy module · BMS · power bus · thermal/isolation services" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f0fdf4;strokeColor=#4ade80;fontColor=#14532d;fontSize=11;align=left;verticalAlign=middle;spacing=7;" vertex="1" parent="p3_1"><mxGeometry x="550" y="205" width="480" height="58" as="geometry"/></mxCell>
+        <mxCell id="p3_v1" value="&lt;b&gt;V-01&lt;/b&gt; Energy simulation, BMS bench test, isolation test, thermal test and abuse-case analysis." style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff7ed;strokeColor=#fb923c;fontColor=#7c2d12;fontSize=11;align=left;verticalAlign=middle;spacing=7;" vertex="1" parent="p3_1"><mxGeometry x="1070" y="205" width="500" height="58" as="geometry"/></mxCell>
+        <mxCell id="p3_r2" value="&lt;b&gt;R-04&lt;/b&gt; Interchangeable payload bay with mechanical, electrical and data compatibility." style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#60a5fa;fontColor=#0f172a;fontSize=11;align=left;verticalAlign=middle;spacing=7;" vertex="1" parent="p3_1"><mxGeometry x="30" y="273" width="480" height="58" as="geometry"/></mxCell>
+        <mxCell id="p3_a2" value="&lt;b&gt;S-03 / S-12&lt;/b&gt; Payload bay · docking/retention · power/data hand-off · interlocks" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f0fdf4;strokeColor=#4ade80;fontColor=#14532d;fontSize=11;align=left;verticalAlign=middle;spacing=7;" vertex="1" parent="p3_1"><mxGeometry x="550" y="273" width="480" height="58" as="geometry"/></mxCell>
+        <mxCell id="p3_v2" value="&lt;b&gt;V-02&lt;/b&gt; Interface inspection, fit/function test, retention test, identification and release confirmation." style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff7ed;strokeColor=#fb923c;fontColor=#7c2d12;fontSize=11;align=left;verticalAlign=middle;spacing=7;" vertex="1" parent="p3_1"><mxGeometry x="1070" y="273" width="500" height="58" as="geometry"/></mxCell>
+        <mxCell id="p3_r3" value="&lt;b&gt;R-05&lt;/b&gt; Drive-by-wire, state estimation, operator override and autonomy-ready control." style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#60a5fa;fontColor=#0f172a;fontSize=11;align=left;verticalAlign=middle;spacing=7;" vertex="1" parent="p3_1"><mxGeometry x="30" y="341" width="480" height="58" as="geometry"/></mxCell>
+        <mxCell id="p3_a3" value="&lt;b&gt;S-01 / S-04 / S-07&lt;/b&gt; Mobility control · edge AI/control · vehicle API" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f0fdf4;strokeColor=#4ade80;fontColor=#14532d;fontSize=11;align=left;verticalAlign=middle;spacing=7;" vertex="1" parent="p3_1"><mxGeometry x="550" y="341" width="480" height="58" as="geometry"/></mxCell>
+        <mxCell id="p3_v3" value="&lt;b&gt;V-03&lt;/b&gt; Control-model review, SIL, HIL, ground maneuver test and operator-override demonstration." style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff7ed;strokeColor=#fb923c;fontColor=#7c2d12;fontSize=11;align=left;verticalAlign=middle;spacing=7;" vertex="1" parent="p3_1"><mxGeometry x="1070" y="341" width="500" height="58" as="geometry"/></mxCell>
+        <mxCell id="p3_r4" value="&lt;b&gt;R-06&lt;/b&gt; Open and replaceable interfaces for ROS 2, vehicle API, telemetry, V2X and edge/cloud services." style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#60a5fa;fontColor=#0f172a;fontSize=11;align=left;verticalAlign=middle;spacing=7;" vertex="1" parent="p3_1"><mxGeometry x="30" y="409" width="480" height="58" as="geometry"/></mxCell>
+        <mxCell id="p3_a4" value="&lt;b&gt;S-06 / S-07&lt;/b&gt; Communications/data layer · versioned contracts · authentication and logging" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f0fdf4;strokeColor=#4ade80;fontColor=#14532d;fontSize=11;align=left;verticalAlign=middle;spacing=7;" vertex="1" parent="p3_1"><mxGeometry x="550" y="409" width="480" height="58" as="geometry"/></mxCell>
+        <mxCell id="p3_v4" value="&lt;b&gt;V-04&lt;/b&gt; API/schema review, protocol conformance, latency test, interoperability and cybersecurity review." style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff7ed;strokeColor=#fb923c;fontColor=#7c2d12;fontSize=11;align=left;verticalAlign=middle;spacing=7;" vertex="1" parent="p3_1"><mxGeometry x="1070" y="409" width="500" height="58" as="geometry"/></mxCell>
+        <mxCell id="p3_r5" value="&lt;b&gt;R-07&lt;/b&gt; Executable digital twin linked to configuration, telemetry, scenarios and measured data." style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#60a5fa;fontColor=#0f172a;fontSize=11;align=left;verticalAlign=middle;spacing=7;" vertex="1" parent="p3_1"><mxGeometry x="30" y="477" width="480" height="58" as="geometry"/></mxCell>
+        <mxCell id="p3_a5" value="&lt;b&gt;E-01 / E-02&lt;/b&gt; OpenTwin digital twin · Modelica · Gazebo · ROS 2 · scenario registry" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f0fdf4;strokeColor=#4ade80;fontColor=#14532d;fontSize=11;align=left;verticalAlign=middle;spacing=7;" vertex="1" parent="p3_1"><mxGeometry x="550" y="477" width="480" height="58" as="geometry"/></mxCell>
+        <mxCell id="p3_v5" value="&lt;b&gt;V-05&lt;/b&gt; Model review, co-simulation, data replay, parameter correlation and reproducibility audit." style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff7ed;strokeColor=#fb923c;fontColor=#7c2d12;fontSize=11;align=left;verticalAlign=middle;spacing=7;" vertex="1" parent="p3_1"><mxGeometry x="1070" y="477" width="500" height="58" as="geometry"/></mxCell>
+        <mxCell id="p3_r6" value="&lt;b&gt;R-08&lt;/b&gt; Fault detection, hazard isolation, controllability and safe ground/flight degraded modes." style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#60a5fa;fontColor=#0f172a;fontSize=11;align=left;verticalAlign=middle;spacing=7;" vertex="1" parent="p3_1"><mxGeometry x="30" y="545" width="480" height="58" as="geometry"/></mxCell>
+        <mxCell id="p3_a6" value="&lt;b&gt;S-04 / S-05 / S-09 / S-11&lt;/b&gt; Health monitoring · sensing · vehicle and flight control · interlocks" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f0fdf4;strokeColor=#4ade80;fontColor=#14532d;fontSize=11;align=left;verticalAlign=middle;spacing=7;" vertex="1" parent="p3_1"><mxGeometry x="550" y="545" width="480" height="58" as="geometry"/></mxCell>
+        <mxCell id="p3_v6" value="&lt;b&gt;V-06&lt;/b&gt; FMEA/FTA, fault injection, safe-mode demonstration, loss-of-link test and recovery evidence." style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff7ed;strokeColor=#fb923c;fontColor=#7c2d12;fontSize=11;align=left;verticalAlign=middle;spacing=7;" vertex="1" parent="p3_1"><mxGeometry x="1070" y="545" width="500" height="58" as="geometry"/></mxCell>
+        <mxCell id="p3_r7" value="&lt;b&gt;R-09&lt;/b&gt; Coordinate ground vehicle, UAV, payload and mission-control modes with explicit authority." style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#60a5fa;fontColor=#0f172a;fontSize=11;align=left;verticalAlign=middle;spacing=7;" vertex="1" parent="p3_1"><mxGeometry x="30" y="613" width="480" height="58" as="geometry"/></mxCell>
+        <mxCell id="p3_a7" value="&lt;b&gt;S-03 / S-07 / S-08 / S-09 / S-12&lt;/b&gt; Payload, API, UAV, flight control and docking state machines" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f0fdf4;strokeColor=#4ade80;fontColor=#14532d;fontSize=11;align=left;verticalAlign=middle;spacing=7;" vertex="1" parent="p3_1"><mxGeometry x="550" y="613" width="480" height="58" as="geometry"/></mxCell>
+        <mxCell id="p3_v7" value="&lt;b&gt;V-07&lt;/b&gt; State-machine analysis, scenario replay, mode-transition test and integrated demonstration." style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff7ed;strokeColor=#fb923c;fontColor=#7c2d12;fontSize=11;align=left;verticalAlign=middle;spacing=7;" vertex="1" parent="p3_1"><mxGeometry x="1070" y="613" width="500" height="58" as="geometry"/></mxCell>
+        <mxCell id="p3_r8" value="&lt;b&gt;R-10&lt;/b&gt; Define environmental envelope, maintainability, energy efficiency and lifecycle responsibilities." style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#60a5fa;fontColor=#0f172a;fontSize=11;align=left;verticalAlign=middle;spacing=7;" vertex="1" parent="p3_1"><mxGeometry x="30" y="681" width="480" height="58" as="geometry"/></mxCell>
+        <mxCell id="p3_a8" value="&lt;b&gt;S-01 / S-02 / E-03&lt;/b&gt; Structure, energy service, maintenance configuration and lifecycle data" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f0fdf4;strokeColor=#4ade80;fontColor=#14532d;fontSize=11;align=left;verticalAlign=middle;spacing=7;" vertex="1" parent="p3_1"><mxGeometry x="550" y="681" width="480" height="58" as="geometry"/></mxCell>
+        <mxCell id="p3_v8" value="&lt;b&gt;V-08&lt;/b&gt; Environmental analysis, maintainability demonstration, energy/lifecycle assessment and service audit." style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff7ed;strokeColor=#fb923c;fontColor=#7c2d12;fontSize=11;align=left;verticalAlign=middle;spacing=7;" vertex="1" parent="p3_1"><mxGeometry x="1070" y="681" width="500" height="58" as="geometry"/></mxCell>
+        <mxCell id="p3_r9" value="&lt;b&gt;TBD-01&lt;/b&gt; Mass, payload, speed, range/endurance, voltage, capacity, latency and environmental thresholds." style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff7ed;strokeColor=#f97316;fontColor=#7c2d12;fontSize=11;align=left;verticalAlign=middle;spacing=7;" vertex="1" parent="p3_1"><mxGeometry x="30" y="749" width="480" height="58" as="geometry"/></mxCell>
+        <mxCell id="p3_a9" value="&lt;b&gt;A-01&lt;/b&gt; System budgets, model parameters, interface owners and configuration baseline" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff7ed;strokeColor=#f97316;fontColor=#7c2d12;fontSize=11;align=left;verticalAlign=middle;spacing=7;" vertex="1" parent="p3_1"><mxGeometry x="550" y="749" width="480" height="58" as="geometry"/></mxCell>
+        <mxCell id="p3_v9" value="&lt;b&gt;V-09&lt;/b&gt; Analysis closure, simulation evidence, test-plan approval and independent requirement review." style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff7ed;strokeColor=#fb923c;fontColor=#7c2d12;fontSize=11;align=left;verticalAlign=middle;spacing=7;" vertex="1" parent="p3_1"><mxGeometry x="1070" y="749" width="500" height="58" as="geometry"/></mxCell>
+        <mxCell id="p3_r10" value="&lt;b&gt;R-11&lt;/b&gt; Verification evidence shall be reproducible, configuration-controlled and linked to the model baseline." style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#60a5fa;fontColor=#0f172a;fontSize=11;align=left;verticalAlign=middle;spacing=7;" vertex="1" parent="p3_1"><mxGeometry x="30" y="817" width="480" height="58" as="geometry"/></mxCell>
+        <mxCell id="p3_a10" value="&lt;b&gt;E-01 / E-02 / E-03&lt;/b&gt; Digital thread, repository artifacts, telemetry, test records and configuration management" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f0fdf4;strokeColor=#4ade80;fontColor=#14532d;fontSize=11;align=left;verticalAlign=middle;spacing=7;" vertex="1" parent="p3_1"><mxGeometry x="550" y="817" width="480" height="58" as="geometry"/></mxCell>
+        <mxCell id="p3_v10" value="&lt;b&gt;V-10&lt;/b&gt; Traceability audit, checksum/version review, reproducible replay and acceptance record." style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff7ed;strokeColor=#fb923c;fontColor=#7c2d12;fontSize=11;align=left;verticalAlign=middle;spacing=7;" vertex="1" parent="p3_1"><mxGeometry x="1070" y="817" width="500" height="58" as="geometry"/></mxCell>
+        <mxCell id="p3_footer" value="&lt;b&gt;Traceability rule:&lt;/b&gt; no requirement is complete until its owner, allocation, rationale, verification method, acceptance threshold, configuration reference and evidence location are defined." style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e2e8f0;strokeColor=#64748b;fontColor=#334155;fontSize=11;align=left;verticalAlign=middle;spacingLeft=10;" vertex="1" parent="p3_1"><mxGeometry x="30" y="915" width="1540" height="48" as="geometry"/></mxCell>
+        <mxCell id="p3_e1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeColor=#64748b;" edge="1" parent="p3_1" source="p3_r1" target="p3_a1"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="p3_e2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeColor=#64748b;" edge="1" parent="p3_1" source="p3_a1" target="p3_v1"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="p3_e3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeColor=#64748b;" edge="1" parent="p3_1" source="p3_r2" target="p3_a2"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="p3_e4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeColor=#64748b;" edge="1" parent="p3_1" source="p3_a2" target="p3_v2"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="p3_e5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeColor=#64748b;" edge="1" parent="p3_1" source="p3_r3" target="p3_a3"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="p3_e6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeColor=#64748b;" edge="1" parent="p3_1" source="p3_a3" target="p3_v3"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="p3_e7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeColor=#64748b;" edge="1" parent="p3_1" source="p3_r4" target="p3_a4"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="p3_e8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeColor=#64748b;" edge="1" parent="p3_1" source="p3_a4" target="p3_v4"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="p3_e9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeColor=#64748b;" edge="1" parent="p3_1" source="p3_r5" target="p3_a5"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="p3_e10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeColor=#64748b;" edge="1" parent="p3_1" source="p3_a5" target="p3_v5"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="p3_e11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeColor=#64748b;" edge="1" parent="p3_1" source="p3_r6" target="p3_a6"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="p3_e12" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeColor=#64748b;" edge="1" parent="p3_1" source="p3_a6" target="p3_v6"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="p3_e13" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeColor=#64748b;" edge="1" parent="p3_1" source="p3_r7" target="p3_a7"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="p3_e14" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeColor=#64748b;" edge="1" parent="p3_1" source="p3_a7" target="p3_v7"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="p3_e15" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeColor=#64748b;" edge="1" parent="p3_1" source="p3_r8" target="p3_a8"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="p3_e16" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeColor=#64748b;" edge="1" parent="p3_1" source="p3_a8" target="p3_v8"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="p3_e17" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeColor=#64748b;" edge="1" parent="p3_1" source="p3_r9" target="p3_a9"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="p3_e18" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeColor=#64748b;" edge="1" parent="p3_1" source="p3_a9" target="p3_v9"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="p3_e19" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeColor=#64748b;" edge="1" parent="p3_1" source="p3_r10" target="p3_a10"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="p3_e20" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeColor=#64748b;" edge="1" parent="p3_1" source="p3_a10" target="p3_v10"><mxGeometry relative="1" as="geometry"/></mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="mass-vv" name="04 - Verification and Validation">
+    <mxGraphModel dx="1600" dy="1000" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1600" pageHeight="1000" math="0" shadow="0">
+      <root>
+        <mxCell id="p4_0"/>
+        <mxCell id="p4_1" parent="p4_0"/>
+        <mxCell id="p4_title" value="&lt;b&gt;Verification and Validation Strategy&lt;/b&gt;&lt;br&gt;Progressive evidence from requirements baseline to controlled operational demonstration" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#0f172a;strokeColor=#0f172a;fontColor=#ffffff;fontSize=21;fontStyle=1;align=left;verticalAlign=middle;spacingLeft=16;" vertex="1" parent="p4_1">
+          <mxGeometry x="30" y="20" width="1540" height="62" as="geometry"/>
+        </mxCell>
+        <mxCell id="p4_sub" value="Verification checks that the system was built right; validation checks that the configured system supports the intended mission. Gates are evidence-based and configuration-controlled." style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e0f2fe;strokeColor=#0284c7;fontColor=#0c4a6e;fontSize=13;align=left;verticalAlign=middle;spacingLeft=12;" vertex="1" parent="p4_1">
+          <mxGeometry x="30" y="94" width="1540" height="42" as="geometry"/>
+        </mxCell>
+        <mxCell id="p4_g0" value="&lt;b&gt;G0 — Baseline&lt;/b&gt;&lt;br&gt;Approve mission need, system boundary, requirement IDs, owners, assumptions and TBD list." style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dbeafe;strokeColor=#2563eb;fontColor=#1e3a8a;fontSize=12;align=left;verticalAlign=top;spacing=8;" vertex="1" parent="p4_1"><mxGeometry x="45" y="190" width="275" height="110" as="geometry"/></mxCell>
+        <mxCell id="p4_g1" value="&lt;b&gt;G1 — MBSE allocation&lt;/b&gt;&lt;br&gt;Review functional, logical and physical allocation; approve interfaces and configuration items." style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dcfce7;strokeColor=#16a34a;fontColor=#14532d;fontSize=12;align=left;verticalAlign=top;spacing=8;" vertex="1" parent="p4_1"><mxGeometry x="345" y="190" width="275" height="110" as="geometry"/></mxCell>
+        <mxCell id="p4_g2" value="&lt;b&gt;G2 — Executable models&lt;/b&gt;&lt;br&gt;Run Modelica/multiphysics co-simulation and verify units, assumptions, parameter provenance and scenario reproducibility." style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ede9fe;strokeColor=#7c3aed;fontColor=#4c1d95;fontSize=12;align=left;verticalAlign=top;spacing=8;" vertex="1" parent="p4_1"><mxGeometry x="645" y="190" width="275" height="110" as="geometry"/></mxCell>
+        <mxCell id="p4_g3" value="&lt;b&gt;G3 — SIL&lt;/b&gt;&lt;br&gt;Exercise autonomy, energy, sensing, payload and mode logic in repeatable virtual scenarios with acceptance metrics." style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fefce8;strokeColor=#ca8a04;fontColor=#713f12;fontSize=12;align=left;verticalAlign=top;spacing=8;" vertex="1" parent="p4_1"><mxGeometry x="945" y="190" width="275" height="110" as="geometry"/></mxCell>
+        <mxCell id="p4_g4" value="&lt;b&gt;G4 — HIL and subsystem bench&lt;/b&gt;&lt;br&gt;Verify real controllers, BMS, sensors, interfaces, fault handling and timing against simulated plant behavior." style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffedd5;strokeColor=#ea580c;fontColor=#7c2d12;fontSize=12;align=left;verticalAlign=top;spacing=8;" vertex="1" parent="p4_1"><mxGeometry x="1245" y="190" width="310" height="110" as="geometry"/></mxCell>
+        <mxCell id="p4_g5" value="&lt;b&gt;G5 — Integrated ground test&lt;/b&gt;&lt;br&gt;Demonstrate drive-by-wire, payload exchange, energy service, communications, operator override and safe stop." style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f0fdf4;strokeColor=#16a34a;fontColor=#14532d;fontSize=12;align=left;verticalAlign=top;spacing=8;" vertex="1" parent="p4_1"><mxGeometry x="170" y="425" width="300" height="115" as="geometry"/></mxCell>
+        <mxCell id="p4_g6" value="&lt;b&gt;G6 — Controlled aerial integration&lt;/b&gt;&lt;br&gt;Only after approved safety case: tethered or constrained flight, docking/release interlocks, loss-of-link and recovery behavior." style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dbeafe;strokeColor=#2563eb;fontColor=#1e3a8a;fontSize=12;align=left;verticalAlign=top;spacing=8;" vertex="1" parent="p4_1"><mxGeometry x="520" y="425" width="300" height="115" as="geometry"/></mxCell>
+        <mxCell id="p4_g7" value="&lt;b&gt;G7 — Flight-envelope expansion&lt;/b&gt;&lt;br&gt;Incremental, instrumented tests for navigation, payload, energy, autonomy and environmental limits under an approved test plan." style="rounded=1;whiteSpace=wrap;html=1;fillColor=#eff6ff;strokeColor=#2563eb;fontColor=#1e3a8a;fontSize=12;align=left;verticalAlign=top;spacing=8;" vertex="1" parent="p4_1"><mxGeometry x="870" y="425" width="300" height="115" as="geometry"/></mxCell>
+        <mxCell id="p4_g8" value="&lt;b&gt;G8 — Mission validation&lt;/b&gt;&lt;br&gt;Validate representative ground, aerial and payload missions; record operator workload, performance, anomalies and disposition." style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fefce8;strokeColor=#ca8a04;fontColor=#713f12;fontSize=12;align=left;verticalAlign=top;spacing=8;" vertex="1" parent="p4_1"><mxGeometry x="1220" y="425" width="300" height="115" as="geometry"/></mxCell>
+        <mxCell id="p4_audit" value="&lt;b&gt;Evidence package for every gate&lt;/b&gt;&lt;br&gt;Requirement ID and acceptance threshold · model/configuration version · scenario and test setup · telemetry and logs · pass/fail result · anomalies and corrective action · reviewer/owner approval" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f1f5f9;strokeColor=#64748b;fontColor=#1e293b;fontSize=12;align=left;verticalAlign=top;spacing=9;" vertex="1" parent="p4_1"><mxGeometry x="45" y="635" width="470" height="175" as="geometry"/></mxCell>
+        <mxCell id="p4_safety" value="&lt;b&gt;Safety gates&lt;/b&gt;&lt;br&gt;• Hazard analysis before integrated operation&lt;br&gt;• Fail-safe and degraded-mode behavior tested before autonomy claims&lt;br&gt;• Human authority and emergency stop defined&lt;br&gt;• Flight tests require an approved test, airworthiness and regulatory basis" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fee2e2;strokeColor=#dc2626;fontColor=#7f1d1d;fontSize=12;align=left;verticalAlign=top;spacing=9;" vertex="1" parent="p4_1"><mxGeometry x="565" y="635" width="470" height="175" as="geometry"/></mxCell>
+        <mxCell id="p4_methods" value="&lt;b&gt;Methods&lt;/b&gt;&lt;br&gt;Inspection · analysis · simulation · demonstration · bench test · SIL · HIL · ground test · controlled flight test · operational validation" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff7ed;strokeColor=#f97316;fontColor=#7c2d12;fontSize=12;align=left;verticalAlign=top;spacing=9;" vertex="1" parent="p4_1"><mxGeometry x="1085" y="635" width="470" height="175" as="geometry"/></mxCell>
+        <mxCell id="p4_note" value="&lt;b&gt;Acceptance principle:&lt;/b&gt; no simulation result alone authorizes real-world operation. Progression requires independent review, reproducible evidence and explicit closure of safety and regulatory assumptions." style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e2e8f0;strokeColor=#64748b;fontColor=#334155;fontSize=11;align=left;verticalAlign=middle;spacingLeft=10;" vertex="1" parent="p4_1"><mxGeometry x="45" y="865" width="1510" height="60" as="geometry"/></mxCell>
+        <mxCell id="p4_e0" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeColor=#64748b;" edge="1" parent="p4_1" source="p4_g0" target="p4_g1"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="p4_e1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeColor=#64748b;" edge="1" parent="p4_1" source="p4_g1" target="p4_g2"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="p4_e2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeColor=#64748b;" edge="1" parent="p4_1" source="p4_g2" target="p4_g3"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="p4_e3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeColor=#64748b;" edge="1" parent="p4_1" source="p4_g3" target="p4_g4"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="p4_e4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeColor=#64748b;" edge="1" parent="p4_1" source="p4_g4" target="p4_g5"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="p4_e5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeColor=#64748b;" edge="1" parent="p4_1" source="p4_g5" target="p4_g6"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="p4_e6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeColor=#64748b;" edge="1" parent="p4_1" source="p4_g6" target="p4_g7"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="p4_e7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeColor=#64748b;" edge="1" parent="p4_1" source="p4_g7" target="p4_g8"><mxGeometry relative="1" as="geometry"/></mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="mass-evolution" name="05 - Evolution and MVP">
+    <mxGraphModel dx="1600" dy="1000" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1600" pageHeight="1000" math="0" shadow="0">
+      <root>
+        <mxCell id="p5_0"/>
+        <mxCell id="p5_1" parent="p5_0"/>
+        <mxCell id="p5_title" value="&lt;b&gt;Evolution, MVP and Open Technical Decisions&lt;/b&gt;&lt;br&gt;Simulation-first path from concept baseline to an evidence-backed modular demonstrator" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#0f172a;strokeColor=#0f172a;fontColor=#ffffff;fontSize=21;fontStyle=1;align=left;verticalAlign=middle;spacingLeft=16;" vertex="1" parent="p5_1">
+          <mxGeometry x="30" y="20" width="1540" height="62" as="geometry"/>
+        </mxCell>
+        <mxCell id="p5_sub" value="The sequence keeps high-risk assumptions visible: first stabilize requirements and models, then add energy, mobility, payload and controlled aerial capability." style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e0f2fe;strokeColor=#0284c7;fontColor=#0c4a6e;fontSize=13;align=left;verticalAlign=middle;spacingLeft=12;" vertex="1" parent="p5_1">
+          <mxGeometry x="30" y="94" width="1540" height="42" as="geometry"/>
+        </mxCell>
+        <mxCell id="p5_e0" value="&lt;b&gt;MVP-0 — Concept baseline&lt;/b&gt;&lt;br&gt;Freeze mission, system boundary, assumptions, R-01…R-11, interface owners and TBD performance budgets.&lt;br&gt;&lt;br&gt;Exit: approved requirements and risk register" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dbeafe;strokeColor=#2563eb;fontColor=#1e3a8a;fontSize=12;align=left;verticalAlign=top;spacing=9;" vertex="1" parent="p5_1"><mxGeometry x="35" y="190" width="285" height="170" as="geometry"/></mxCell>
+        <mxCell id="p5_e1" value="&lt;b&gt;MVP-1 — Digital baseline&lt;/b&gt;&lt;br&gt;Create CAD abstraction, Modelica energy/vehicle models, OpenTwin data schema and scenario registry.&lt;br&gt;&lt;br&gt;Exit: reproducible model and traceability audit" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ede9fe;strokeColor=#7c3aed;fontColor=#4c1d95;fontSize=12;align=left;verticalAlign=top;spacing=9;" vertex="1" parent="p5_1"><mxGeometry x="345" y="190" width="285" height="170" as="geometry"/></mxCell>
+        <mxCell id="p5_e2" value="&lt;b&gt;MVP-2 — Ground electric demonstrator&lt;/b&gt;&lt;br&gt;Implement energy module, drive-by-wire, vehicle API, sensors, edge control, telemetry and interchangeable ground payload.&lt;br&gt;&lt;br&gt;Exit: SIL/HIL and integrated ground gate" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dcfce7;strokeColor=#16a34a;fontColor=#14532d;fontSize=12;align=left;verticalAlign=top;spacing=9;" vertex="1" parent="p5_1"><mxGeometry x="655" y="190" width="285" height="170" as="geometry"/></mxCell>
+        <mxCell id="p5_e3" value="&lt;b&gt;MVP-3 — UAV and payload integration&lt;/b&gt;&lt;br&gt;Add detachable UAV interface, docking interlocks, flight-control bridge, mission payload and controlled test instrumentation.&lt;br&gt;&lt;br&gt;Exit: approved controlled aerial integration gate" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#eff6ff;strokeColor=#2563eb;fontColor=#1e3a8a;fontSize=12;align=left;verticalAlign=top;spacing=9;" vertex="1" parent="p5_1"><mxGeometry x="965" y="190" width="285" height="170" as="geometry"/></mxCell>
+        <mxCell id="p5_e4" value="&lt;b&gt;MVP-4 — Verification and pilot&lt;/b&gt;&lt;br&gt;Expand the envelope incrementally, validate representative missions, close anomalies and prepare configuration/manufacturing evidence.&lt;br&gt;&lt;br&gt;Exit: independent review and pilot decision" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffedd5;strokeColor=#ea580c;fontColor=#7c2d12;fontSize=12;align=left;verticalAlign=top;spacing=9;" vertex="1" parent="p5_1"><mxGeometry x="1275" y="190" width="290" height="170" as="geometry"/></mxCell>
+        <mxCell id="p5_a" value="&lt;b&gt;Open technical decisions&lt;/b&gt;&lt;br&gt;• Ground-only, detachable-UAV or dual-mode baseline&lt;br&gt;• Propulsion topology and redundancy&lt;br&gt;• Battery chemistry, voltage and service strategy&lt;br&gt;• Autonomy level and human authority&lt;br&gt;• Environmental envelope and certification basis" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f1f5f9;strokeColor=#64748b;fontColor=#1e293b;fontSize=12;align=left;verticalAlign=top;spacing=9;" vertex="1" parent="p5_1"><mxGeometry x="35" y="460" width="480" height="205" as="geometry"/></mxCell>
+        <mxCell id="p5_b" value="&lt;b&gt;Definition of done for the high-level baseline&lt;/b&gt;&lt;br&gt;• 100% of requirements have owner and allocation&lt;br&gt;• All interfaces have version and fault behavior&lt;br&gt;• SIL/HIL scenarios are reproducible&lt;br&gt;• Safe modes are demonstrated before autonomy claims&lt;br&gt;• Ground and flight evidence are separated&lt;br&gt;• Configuration and anomaly closure are auditable" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f0fdf4;strokeColor=#16a34a;fontColor=#14532d;fontSize=12;align=left;verticalAlign=top;spacing=9;" vertex="1" parent="p5_1"><mxGeometry x="560" y="460" width="480" height="205" as="geometry"/></mxCell>
+        <mxCell id="p5_c" value="&lt;b&gt;Open-source reference stack&lt;/b&gt;&lt;br&gt;Modelica / OpenModelica · ROS 2 · PX4 or replaceable flight stack · Gazebo · Python/OpenCV · Linux · Docker · Kubernetes optional for shared simulation services · OpenTwin data contracts" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ede9fe;strokeColor=#7c3aed;fontColor=#4c1d95;fontSize=12;align=left;verticalAlign=top;spacing=9;" vertex="1" parent="p5_1"><mxGeometry x="1085" y="460" width="480" height="205" as="geometry"/></mxCell>
+        <mxCell id="p5_tbd" value="&lt;b&gt;Parameter register to be closed by engineering analysis&lt;/b&gt;&lt;br&gt;Mass and center of gravity · dimensions and clearances · payload and structural loads · energy capacity and power · ground/flight performance · endurance/range · thermal limits · communications latency · environmental conditions · maintenance intervals · safety targets" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff7ed;strokeColor=#f97316;fontColor=#7c2d12;fontSize=13;align=left;verticalAlign=top;spacing=10;" vertex="1" parent="p5_1"><mxGeometry x="35" y="725" width="1530" height="125" as="geometry"/></mxCell>
+        <mxCell id="p5_note" value="&lt;b&gt;Scope note:&lt;/b&gt; this evolution view is an engineering-planning aid. It does not define a production aircraft, road-legal vehicle or certified operational system." style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e2e8f0;strokeColor=#64748b;fontColor=#334155;fontSize=11;align=left;verticalAlign=middle;spacingLeft=10;" vertex="1" parent="p5_1"><mxGeometry x="35" y="890" width="1530" height="52" as="geometry"/></mxCell>
+        <mxCell id="p5_e01" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeColor=#64748b;" edge="1" parent="p5_1" source="p5_e0" target="p5_e1"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="p5_e12" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeColor=#64748b;" edge="1" parent="p5_1" source="p5_e1" target="p5_e2"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="p5_e23" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeColor=#64748b;" edge="1" parent="p5_1" source="p5_e2" target="p5_e3"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="p5_e34" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeColor=#64748b;" edge="1" parent="p5_1" source="p5_e3" target="p5_e4"><mxGeometry relative="1" as="geometry"/></mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
