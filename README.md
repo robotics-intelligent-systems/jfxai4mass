@@ -21,6 +21,9 @@ platforms.
 
 ## Table of Contents
 
+- [Documentation Index](docs/README.md)
+- [Peru Driving Licence Categories](docs/regulations/peru-driving-licence-categories.md)
+
 - [Project Vision](#project-vision)
 - [Description and Context](#description-and-context)
 - [Objectives](#objectives)
