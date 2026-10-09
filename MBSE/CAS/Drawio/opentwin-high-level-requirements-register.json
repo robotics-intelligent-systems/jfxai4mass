@@ -1,0 +1,326 @@
+{
+  "source_commit": "5b17496213385eb9b9bd3f5923c231a365667c88",
+  "status": "proposed",
+  "requirements": [
+    {
+      "id": "COM-01",
+      "title": "Operational envelope",
+      "statement": "The system shall define approved missions, actors, operating modes and environmental limits for each configuration.",
+      "owner": "Systems engineering",
+      "acceptance": "Review mission scenarios, boundaries and measurable envelope; no unresolved operating limit at release.",
+      "allocation": "Mission / environment",
+      "status": "proposed",
+      "source": "README.md and common interpretation of three CAD concepts"
+    },
+    {
+      "id": "COM-02",
+      "title": "Module interoperability",
+      "statement": "The system shall provide versioned mechanical, power and data interface contracts for interchangeable modules.",
+      "owner": "Integration",
+      "acceptance": "Demonstrate module substitution against interface contracts, including incompatible-module rejection.",
+      "allocation": "Interface control",
+      "status": "proposed",
+      "source": "README.md and common interpretation of three CAD concepts"
+    },
+    {
+      "id": "COM-03",
+      "title": "Local fault response",
+      "statement": "The system shall execute a defined local safe or degraded response to each identified critical fault.",
+      "owner": "Safety / controls",
+      "acceptance": "Inject critical faults and connectivity loss; measured response meets the approved fault-response matrix.",
+      "allocation": "Safety control",
+      "status": "proposed",
+      "source": "README.md and common interpretation of three CAD concepts"
+    },
+    {
+      "id": "COM-04",
+      "title": "Energy provision",
+      "statement": "The system shall supply mission and essential safety loads within the approved energy budget.",
+      "owner": "Energy engineering",
+      "acceptance": "Analyze and test worst-case coincident loads and reserve against the configured mission profile.",
+      "allocation": "Energy",
+      "status": "proposed",
+      "source": "README.md and common interpretation of three CAD concepts"
+    },
+    {
+      "id": "COM-05",
+      "title": "Twin identity and provenance",
+      "statement": "The digital twin shall associate each state record with asset identity, configuration, timestamp, source and validity.",
+      "owner": "Data / twin",
+      "acceptance": "Replay records and reject or flag stale, missing and mismatched states according to the data contract.",
+      "allocation": "OpenTwin",
+      "status": "proposed",
+      "source": "README.md and common interpretation of three CAD concepts"
+    },
+    {
+      "id": "COM-06",
+      "title": "Model verification",
+      "statement": "The project shall maintain versioned executable models and reproducible scenarios for each claimed system capability.",
+      "owner": "Simulation / MBSE",
+      "acceptance": "Reproduce model runs and correlate selected outputs with bench or prototype data within approved tolerances.",
+      "allocation": "Simulation",
+      "status": "proposed",
+      "source": "README.md and common interpretation of three CAD concepts"
+    },
+    {
+      "id": "COM-07",
+      "title": "Maintenance access",
+      "statement": "The system shall provide documented inspection and replacement procedures for serviceable modules.",
+      "owner": "Maintenance",
+      "acceptance": "Demonstrate inspection and replacement using approved tools, isolation steps and service limits.",
+      "allocation": "Lifecycle",
+      "status": "proposed",
+      "source": "README.md and common interpretation of three CAD concepts"
+    },
+    {
+      "id": "COM-08",
+      "title": "Command authorization",
+      "statement": "The system shall accept control commands only from authenticated and authorized sources.",
+      "owner": "Security",
+      "acceptance": "Test unauthorized, replayed and malformed commands; verify rejection and event recording.",
+      "allocation": "Control gateway",
+      "status": "proposed",
+      "source": "README.md and common interpretation of three CAD concepts"
+    },
+    {
+      "id": "COM-09",
+      "title": "Configuration traceability",
+      "statement": "The project shall trace each requirement to its allocated element, verification result and released configuration.",
+      "owner": "MBSE / quality",
+      "acceptance": "Audit complete requirement-to-evidence links and disposition of failures before baseline release.",
+      "allocation": "Configuration",
+      "status": "proposed",
+      "source": "README.md and common interpretation of three CAD concepts"
+    },
+    {
+      "id": "ARM-01",
+      "title": "Ground mobility",
+      "statement": "The vehicle shall provide propulsion, steering and braking throughout its approved terrain and loading envelope.",
+      "owner": "Vehicle engineering",
+      "acceptance": "Analyze and test handling, braking and grade performance for the worst approved payload and panel configuration.",
+      "allocation": "Chassis / mobility",
+      "status": "proposed",
+      "source": "MBSE/CAD/opentwin-modular-armor-truck-digital-twin-concept.jpg"
+    },
+    {
+      "id": "ARM-02",
+      "title": "Panel interchange",
+      "statement": "The vehicle shall permit replacement of designated protective panels through documented mounting interfaces.",
+      "owner": "Mechanical integration",
+      "acceptance": "Demonstrate panel exchange, correct installation and retention under approved structural loads.",
+      "allocation": "Panels / mounts",
+      "status": "proposed",
+      "source": "MBSE/CAD/opentwin-modular-armor-truck-digital-twin-concept.jpg"
+    },
+    {
+      "id": "ARM-03",
+      "title": "Protection objective",
+      "statement": "The project shall specify a threat and protection acceptance basis for each claimed protective configuration.",
+      "owner": "Protection / safety",
+      "acceptance": "Approve threat cases and assembly-level evaluation plan; close performance evidence before making protection claims.",
+      "allocation": "Cabin / protective assembly",
+      "status": "proposed",
+      "source": "MBSE/CAD/opentwin-modular-armor-truck-digital-twin-concept.jpg"
+    },
+    {
+      "id": "ARM-04",
+      "title": "Occupant egress",
+      "statement": "The vehicle shall provide occupant emergency egress in each approved occupied configuration.",
+      "owner": "Human factors",
+      "acceptance": "Demonstrate access and emergency exit with representative occupants and equipment under defined fault cases.",
+      "allocation": "Cabin / access",
+      "status": "proposed",
+      "source": "MBSE/CAD/opentwin-modular-armor-truck-digital-twin-concept.jpg"
+    },
+    {
+      "id": "ARM-05",
+      "title": "Payload retention",
+      "statement": "The vehicle shall retain cargo and installed modules under the approved service and emergency load cases.",
+      "owner": "Structures",
+      "acceptance": "Analyze and test mounts with representative payloads and configuration-specific mass and center of gravity.",
+      "allocation": "Cargo / chassis",
+      "status": "proposed",
+      "source": "MBSE/CAD/opentwin-modular-armor-truck-digital-twin-concept.jpg"
+    },
+    {
+      "id": "ARM-06",
+      "title": "Condition monitoring",
+      "statement": "The system shall report the health of monitored vehicle and protective modules with their configuration identity.",
+      "owner": "Sensors / twin",
+      "acceptance": "Introduce monitored faults and verify detection, operator indication and twin association.",
+      "allocation": "Sensors / twin",
+      "status": "proposed",
+      "source": "MBSE/CAD/opentwin-modular-armor-truck-digital-twin-concept.jpg"
+    },
+    {
+      "id": "EXP-01",
+      "title": "Mobile habitat retention",
+      "statement": "The mobile habitat shall retain installed equipment and stored supplies throughout the approved travel load envelope.",
+      "owner": "Vehicle / structures",
+      "acceptance": "Analyze and test equipment mounts and vehicle stability for every approved traveling configuration.",
+      "allocation": "Mobile habitat",
+      "status": "proposed",
+      "source": "MBSE/CAD/opentwin-explorer-mobile-fixed-habitat-digital-twin-concept.jpg"
+    },
+    {
+      "id": "EXP-02",
+      "title": "Fixed refuge integrity",
+      "statement": "The fixed refuge shall maintain structural integrity for the approved site-specific load cases.",
+      "owner": "Civil / structures",
+      "acceptance": "Review site, soil, drainage and structural evidence against selected occupancy and environmental loads.",
+      "allocation": "Fixed refuge",
+      "status": "proposed",
+      "source": "MBSE/CAD/opentwin-explorer-mobile-fixed-habitat-digital-twin-concept.jpg"
+    },
+    {
+      "id": "EXP-03",
+      "title": "Module reuse",
+      "statement": "The habitat system shall support designated shared service modules in both mobile and fixed installations.",
+      "owner": "Integration",
+      "acceptance": "Install each shared module in both contexts and demonstrate interface compatibility and isolation.",
+      "allocation": "Shared modules",
+      "status": "proposed",
+      "source": "MBSE/CAD/opentwin-explorer-mobile-fixed-habitat-digital-twin-concept.jpg"
+    },
+    {
+      "id": "EXP-04",
+      "title": "Habitable environment",
+      "statement": "Each occupied habitat shall maintain the approved indoor environmental envelope under declared occupancy and external conditions.",
+      "owner": "HVAC / human factors",
+      "acceptance": "Measure ventilation and indoor conditions in representative occupancy, weather and degraded-service scenarios.",
+      "allocation": "Ventilation / habitat",
+      "status": "proposed",
+      "source": "MBSE/CAD/opentwin-explorer-mobile-fixed-habitat-digital-twin-concept.jpg"
+    },
+    {
+      "id": "EXP-05",
+      "title": "Water segregation",
+      "statement": "Each habitat shall keep potable-water circuits isolated from wastewater circuits in all approved modes.",
+      "owner": "Water systems",
+      "acceptance": "Inspect circuits and test leakage, backflow protection, drainage and maintenance isolation.",
+      "allocation": "Fresh / grey water",
+      "status": "proposed",
+      "source": "MBSE/CAD/opentwin-explorer-mobile-fixed-habitat-digital-twin-concept.jpg"
+    },
+    {
+      "id": "EXP-06",
+      "title": "Emergency exit",
+      "statement": "Each occupied habitat shall provide emergency egress when the normal entrance is unavailable.",
+      "owner": "Safety / human factors",
+      "acceptance": "Block the normal entrance and demonstrate exit within approved occupant and accessibility criteria.",
+      "allocation": "Access / egress",
+      "status": "proposed",
+      "source": "MBSE/CAD/opentwin-explorer-mobile-fixed-habitat-digital-twin-concept.jpg"
+    },
+    {
+      "id": "EXP-07",
+      "title": "Service continuity",
+      "statement": "Each habitat shall prioritize essential occupied-safety loads during loss of its primary energy supply.",
+      "owner": "Energy / safety",
+      "acceptance": "Interrupt primary supply and measure reserve provision, alarms and prescribed degraded operation.",
+      "allocation": "Energy / essential loads",
+      "status": "proposed",
+      "source": "MBSE/CAD/opentwin-explorer-mobile-fixed-habitat-digital-twin-concept.jpg"
+    },
+    {
+      "id": "UGV-01",
+      "title": "Ground carrier mobility",
+      "statement": "The carrier shall provide controlled ground motion within its approved terrain and loaded configuration envelope.",
+      "owner": "Vehicle engineering",
+      "acceptance": "Test braking, steering, traction and stability with the robot stowed and with the carrier unloaded.",
+      "allocation": "4x4 carrier",
+      "status": "proposed",
+      "source": "MBSE/CAD/opentwin-amphibious-ugv-agricultural-robot-digital-twin-concept.jpg"
+    },
+    {
+      "id": "UGV-02",
+      "title": "Flotation and stability",
+      "statement": "The carrier shall maintain approved buoyancy and stability margins for each authorized water loading condition.",
+      "owner": "Marine / structures",
+      "acceptance": "Analyze and progressively test displacement, trim, reserve buoyancy and stability with representative loading.",
+      "allocation": "Hull / flotation",
+      "status": "proposed",
+      "source": "MBSE/CAD/opentwin-amphibious-ugv-agricultural-robot-digital-twin-concept.jpg"
+    },
+    {
+      "id": "UGV-03",
+      "title": "Water maneuvering",
+      "statement": "The carrier shall provide controlled propulsion and steering within its approved water operating envelope.",
+      "owner": "Marine / controls",
+      "acceptance": "Demonstrate maneuvering and recovery in defined water conditions using the selected propulsion configuration.",
+      "allocation": "Water mobility",
+      "status": "proposed",
+      "source": "MBSE/CAD/opentwin-amphibious-ugv-agricultural-robot-digital-twin-concept.jpg"
+    },
+    {
+      "id": "UGV-04",
+      "title": "Mode transitions",
+      "statement": "The carrier shall permit ground-water transitions only when approved transition preconditions are satisfied.",
+      "owner": "Controls / safety",
+      "acceptance": "Test valid and invalid transition commands, loading, attitude and ingress states against the guard matrix.",
+      "allocation": "Mode controller",
+      "status": "proposed",
+      "source": "MBSE/CAD/opentwin-amphibious-ugv-agricultural-robot-digital-twin-concept.jpg"
+    },
+    {
+      "id": "UGV-05",
+      "title": "Robot transport",
+      "statement": "The carrier shall retain the agricultural robot within its transport bay during approved ground and water operations.",
+      "owner": "Mechanical integration",
+      "acceptance": "Test restraints, clearances and loaded stability; inhibit travel when required retention status is invalid.",
+      "allocation": "Bay / restraints",
+      "status": "proposed",
+      "source": "MBSE/CAD/opentwin-amphibious-ugv-agricultural-robot-digital-twin-concept.jpg"
+    },
+    {
+      "id": "UGV-06",
+      "title": "Deployment and recovery",
+      "statement": "The system shall provide controlled robot loading and unloading through its ramp within the approved deployment envelope.",
+      "owner": "Robotics / integration",
+      "acceptance": "Demonstrate deploy and retrieve with representative robot mass, slope and surface conditions; test interlocks.",
+      "allocation": "Ramp / bay",
+      "status": "proposed",
+      "source": "MBSE/CAD/opentwin-amphibious-ugv-agricultural-robot-digital-twin-concept.jpg"
+    },
+    {
+      "id": "UGV-07",
+      "title": "Cooperative mission",
+      "statement": "The system shall coordinate carrier and robot tasks under defined command authority and separation rules.",
+      "owner": "Robotics / mission",
+      "acceptance": "Run representative cooperative tasks and conflicting commands; verify authority, separation and event history.",
+      "allocation": "Mission controller",
+      "status": "proposed",
+      "source": "MBSE/CAD/opentwin-amphibious-ugv-agricultural-robot-digital-twin-concept.jpg"
+    },
+    {
+      "id": "UGV-08",
+      "title": "Communication loss",
+      "statement": "Each mobile agent shall independently execute its approved fallback after loss of the cooperative control link.",
+      "owner": "Safety / robotics",
+      "acceptance": "Break links during transport and field work; measure each agent response against its fallback limits.",
+      "allocation": "Local controllers",
+      "status": "proposed",
+      "source": "MBSE/CAD/opentwin-amphibious-ugv-agricultural-robot-digital-twin-concept.jpg"
+    },
+    {
+      "id": "UGV-09",
+      "title": "Agricultural operation",
+      "statement": "The robot shall execute the selected agricultural task within a declared crop, terrain and human-proximity envelope.",
+      "owner": "Agricultural robotics",
+      "acceptance": "Validate the selected task against approved quality and intervention criteria; no unspecified implement is assumed.",
+      "allocation": "Compact robot",
+      "status": "proposed",
+      "source": "MBSE/CAD/opentwin-amphibious-ugv-agricultural-robot-digital-twin-concept.jpg"
+    },
+    {
+      "id": "UGV-10",
+      "title": "Ingress response",
+      "statement": "The carrier shall detect defined critical water-ingress conditions and execute the approved local response.",
+      "owner": "Marine / safety",
+      "acceptance": "Inject ingress sensor conditions and verify alarm, transition inhibition and recovery response.",
+      "allocation": "Hull monitoring",
+      "status": "proposed",
+      "source": "MBSE/CAD/opentwin-amphibious-ugv-agricultural-robot-digital-twin-concept.jpg"
+    }
+  ]
+}
