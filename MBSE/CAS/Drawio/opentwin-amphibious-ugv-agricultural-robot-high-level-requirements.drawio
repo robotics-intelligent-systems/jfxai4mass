@@ -1,0 +1,99 @@
+<?xml version='1.0' encoding='utf-8'?>
+<mxfile host="app.diagrams.net" version="24.7.17" compressed="false">
+  <diagram id="opentwin-amphibious-ugv-agricultural-robot-high-level-requirements-0" name="01 | Scope and provenance">
+    <mxGraphModel dx="1600" dy="1200" grid="1" gridSize="10" page="1" pageScale="1" pageWidth="1600" pageHeight="920">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="title" value="OpenTwin | Amphibious UGV and agricultural robot | 01 | Scope and provenance" style="rounded=1;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacing=18;fontSize=24;fontColor=#ffffff;fillColor=#16324f;strokeColor=#bac9d8;" vertex="1" parent="1">
+          <mxGeometry x="40" y="20" width="1520" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="scope" value="SYSTEM BOUNDARY An amphibious 4x4 carrier transports and deploys a compact&lt;br&gt;agricultural robot. Water propulsion, energy topology and autonomy level are&lt;br&gt;open decisions; rescue occupancy is outside this baseline.&lt;br&gt;&lt;br&gt;Source: MBSE/CAD/opentwin-amphibious-ugv-agricultural-robot-digital-twin-&lt;br&gt;concept.jpg" style="rounded=1;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacing=18;fontSize=16;fontColor=#152b43;fillColor=#ffffff;strokeColor=#bac9d8;" vertex="1" parent="1">
+          <mxGeometry x="40" y="140" width="740" height="360" as="geometry" />
+        </mxCell>
+        <mxCell id="inherit" value="COMMON REQUIREMENTS&lt;br&gt;&lt;br&gt;Apply COM-01 through COM-09 from&lt;br&gt;opentwin-common-high-level-requirements.drawio.&lt;br&gt;&lt;br&gt;Verify common requirements in the configuration of this concept; cross-concept&lt;br&gt;reuse does not replace mission-specific evidence." style="rounded=1;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacing=18;fontSize=16;fontColor=#152b43;fillColor=#ffffff;strokeColor=#bac9d8;" vertex="1" parent="1">
+          <mxGeometry x="820" y="140" width="740" height="360" as="geometry" />
+        </mxCell>
+        <mxCell id="source" value="SOURCE AND STATUS&lt;br&gt;&lt;br&gt;Concept artwork and repository vision are input needs, not measured&lt;br&gt;engineering evidence.&lt;br&gt;&lt;br&gt;Baseline: proposed, 09 Oct 2026.&lt;br&gt;Source commit:&lt;br&gt;5b17496213385eb9b9bd3f5923c231a365667c88&lt;br&gt;&lt;br&gt;Owners shown are accountable roles to be assigned." style="rounded=1;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacing=18;fontSize=16;fontColor=#152b43;fillColor=#ffffff;strokeColor=#bac9d8;" vertex="1" parent="1">
+          <mxGeometry x="40" y="520" width="740" height="360" as="geometry" />
+        </mxCell>
+        <mxCell id="limits" value="OPEN DECISIONS&lt;br&gt;&lt;br&gt;Numerical limits, safety targets and applicable approval basis remain&lt;br&gt;unapproved.&lt;br&gt;&lt;br&gt;Do not inherit hydrogen, hydrojet, aerial mobility or rescue occupancy from&lt;br&gt;unrelated legacy diagrams.&lt;br&gt;&lt;br&gt;Candidate tools are replaceable implementations." style="rounded=1;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacing=18;fontSize=16;fontColor=#152b43;fillColor=#ffffff;strokeColor=#bac9d8;" vertex="1" parent="1">
+          <mxGeometry x="820" y="520" width="740" height="360" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="opentwin-amphibious-ugv-agricultural-robot-high-level-requirements-1" name="02 | Concept requirements">
+    <mxGraphModel dx="1600" dy="1200" grid="1" gridSize="10" page="1" pageScale="1" pageWidth="1600" pageHeight="2060">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="title" value="OpenTwin | Amphibious UGV and agricultural robot | 02 | Concept requirements" style="rounded=1;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacing=18;fontSize=24;fontColor=#ffffff;fillColor=#16324f;strokeColor=#bac9d8;" vertex="1" parent="1">
+          <mxGeometry x="40" y="20" width="1520" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="UGV-01" value="UGV-01 | Ground carrier mobility&lt;br&gt;&lt;br&gt;The carrier shall provide controlled ground motion within its approved terrain&lt;br&gt;and loaded configuration envelope.&lt;br&gt;&lt;br&gt;Acceptance: Test braking, steering, traction and stability with the robot&lt;br&gt;stowed&lt;br&gt;and with the carrier unloaded.&lt;br&gt;&lt;br&gt;Proposed owner: Vehicle engineering | Allocation: 4x4 carrier" style="rounded=1;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacing=18;fontSize=16;fontColor=#152b43;fillColor=#ffffff;strokeColor=#bac9d8;" vertex="1" parent="1">
+          <mxGeometry x="40" y="140" width="740" height="360" as="geometry" />
+        </mxCell>
+        <mxCell id="UGV-02" value="UGV-02 | Flotation and stability&lt;br&gt;&lt;br&gt;The carrier shall maintain approved buoyancy and stability margins for each&lt;br&gt;authorized water loading condition.&lt;br&gt;&lt;br&gt;Acceptance: Analyze and progressively test displacement, trim, reserve&lt;br&gt;buoyancy&lt;br&gt;and stability with representative loading.&lt;br&gt;&lt;br&gt;Proposed owner: Marine / structures | Allocation: Hull / flotation" style="rounded=1;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacing=18;fontSize=16;fontColor=#152b43;fillColor=#ffffff;strokeColor=#bac9d8;" vertex="1" parent="1">
+          <mxGeometry x="820" y="140" width="740" height="360" as="geometry" />
+        </mxCell>
+        <mxCell id="UGV-03" value="UGV-03 | Water maneuvering&lt;br&gt;&lt;br&gt;The carrier shall provide controlled propulsion and steering within its&lt;br&gt;approved&lt;br&gt;water operating envelope.&lt;br&gt;&lt;br&gt;Acceptance: Demonstrate maneuvering and recovery in defined water conditions&lt;br&gt;using the selected propulsion configuration.&lt;br&gt;&lt;br&gt;Proposed owner: Marine / controls | Allocation: Water mobility" style="rounded=1;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacing=18;fontSize=16;fontColor=#152b43;fillColor=#ffffff;strokeColor=#bac9d8;" vertex="1" parent="1">
+          <mxGeometry x="40" y="520" width="740" height="360" as="geometry" />
+        </mxCell>
+        <mxCell id="UGV-04" value="UGV-04 | Mode transitions&lt;br&gt;&lt;br&gt;The carrier shall permit ground-water transitions only when approved&lt;br&gt;transition&lt;br&gt;preconditions are satisfied.&lt;br&gt;&lt;br&gt;Acceptance: Test valid and invalid transition commands, loading, attitude and&lt;br&gt;ingress states against the guard matrix.&lt;br&gt;&lt;br&gt;Proposed owner: Controls / safety | Allocation: Mode controller" style="rounded=1;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacing=18;fontSize=16;fontColor=#152b43;fillColor=#ffffff;strokeColor=#bac9d8;" vertex="1" parent="1">
+          <mxGeometry x="820" y="520" width="740" height="360" as="geometry" />
+        </mxCell>
+        <mxCell id="UGV-05" value="UGV-05 | Robot transport&lt;br&gt;&lt;br&gt;The carrier shall retain the agricultural robot within its transport bay&lt;br&gt;during&lt;br&gt;approved ground and water operations.&lt;br&gt;&lt;br&gt;Acceptance: Test restraints, clearances and loaded stability; inhibit travel&lt;br&gt;when required retention status is invalid.&lt;br&gt;&lt;br&gt;Proposed owner: Mechanical integration | Allocation: Bay / restraints" style="rounded=1;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacing=18;fontSize=16;fontColor=#152b43;fillColor=#ffffff;strokeColor=#bac9d8;" vertex="1" parent="1">
+          <mxGeometry x="40" y="900" width="740" height="360" as="geometry" />
+        </mxCell>
+        <mxCell id="UGV-06" value="UGV-06 | Deployment and recovery&lt;br&gt;&lt;br&gt;The system shall provide controlled robot loading and unloading through its&lt;br&gt;ramp&lt;br&gt;within the approved deployment envelope.&lt;br&gt;&lt;br&gt;Acceptance: Demonstrate deploy and retrieve with representative robot mass,&lt;br&gt;slope and surface conditions; test interlocks.&lt;br&gt;&lt;br&gt;Proposed owner: Robotics / integration | Allocation: Ramp / bay" style="rounded=1;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacing=18;fontSize=16;fontColor=#152b43;fillColor=#ffffff;strokeColor=#bac9d8;" vertex="1" parent="1">
+          <mxGeometry x="820" y="900" width="740" height="360" as="geometry" />
+        </mxCell>
+        <mxCell id="UGV-07" value="UGV-07 | Cooperative mission&lt;br&gt;&lt;br&gt;The system shall coordinate carrier and robot tasks under defined command&lt;br&gt;authority and separation rules.&lt;br&gt;&lt;br&gt;Acceptance: Run representative cooperative tasks and conflicting commands;&lt;br&gt;verify authority, separation and event history.&lt;br&gt;&lt;br&gt;Proposed owner: Robotics / mission | Allocation: Mission controller" style="rounded=1;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacing=18;fontSize=16;fontColor=#152b43;fillColor=#ffffff;strokeColor=#bac9d8;" vertex="1" parent="1">
+          <mxGeometry x="40" y="1280" width="740" height="360" as="geometry" />
+        </mxCell>
+        <mxCell id="UGV-08" value="UGV-08 | Communication loss&lt;br&gt;&lt;br&gt;Each mobile agent shall independently execute its approved fallback after loss&lt;br&gt;of the cooperative control link.&lt;br&gt;&lt;br&gt;Acceptance: Break links during transport and field work; measure each agent&lt;br&gt;response against its fallback limits.&lt;br&gt;&lt;br&gt;Proposed owner: Safety / robotics | Allocation: Local controllers" style="rounded=1;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacing=18;fontSize=16;fontColor=#152b43;fillColor=#ffffff;strokeColor=#bac9d8;" vertex="1" parent="1">
+          <mxGeometry x="820" y="1280" width="740" height="360" as="geometry" />
+        </mxCell>
+        <mxCell id="UGV-09" value="UGV-09 | Agricultural operation&lt;br&gt;&lt;br&gt;The robot shall execute the selected agricultural task within a declared crop,&lt;br&gt;terrain and human-proximity envelope.&lt;br&gt;&lt;br&gt;Acceptance: Validate the selected task against approved quality and&lt;br&gt;intervention&lt;br&gt;criteria; no unspecified implement is assumed.&lt;br&gt;&lt;br&gt;Proposed owner: Agricultural robotics | Allocation: Compact robot" style="rounded=1;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacing=18;fontSize=16;fontColor=#152b43;fillColor=#ffffff;strokeColor=#bac9d8;" vertex="1" parent="1">
+          <mxGeometry x="40" y="1660" width="740" height="360" as="geometry" />
+        </mxCell>
+        <mxCell id="UGV-10" value="UGV-10 | Ingress response&lt;br&gt;&lt;br&gt;The carrier shall detect defined critical water-ingress conditions and execute&lt;br&gt;the approved local response.&lt;br&gt;&lt;br&gt;Acceptance: Inject ingress sensor conditions and verify alarm, transition&lt;br&gt;inhibition and recovery response.&lt;br&gt;&lt;br&gt;Proposed owner: Marine / safety | Allocation: Hull monitoring" style="rounded=1;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacing=18;fontSize=16;fontColor=#152b43;fillColor=#ffffff;strokeColor=#bac9d8;" vertex="1" parent="1">
+          <mxGeometry x="820" y="1660" width="740" height="360" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="opentwin-amphibious-ugv-agricultural-robot-high-level-requirements-2" name="03 | Acceptance parameters">
+    <mxGraphModel dx="1600" dy="1200" grid="1" gridSize="10" page="1" pageScale="1" pageWidth="1600" pageHeight="1680">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="title" value="OpenTwin | Amphibious UGV and agricultural robot | 03 | Acceptance parameters" style="rounded=1;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacing=18;fontSize=24;fontColor=#ffffff;fillColor=#16324f;strokeColor=#bac9d8;" vertex="1" parent="1">
+          <mxGeometry x="40" y="20" width="1520" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="TBD-1" value="TBD-UGV-01 | Water depth, current, wave and shoreline limits&lt;br&gt;&lt;br&gt;Owner: systems engineering with allocated domain lead. Closure: analysis and&lt;br&gt;stakeholder review establish measurable limits and verification scenarios&lt;br&gt;before&lt;br&gt;G1. Status: open; no value inferred from artwork." style="rounded=1;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacing=18;fontSize=16;fontColor=#152b43;fillColor=#ffffff;strokeColor=#bac9d8;" vertex="1" parent="1">
+          <mxGeometry x="40" y="140" width="740" height="360" as="geometry" />
+        </mxCell>
+        <mxCell id="TBD-2" value="TBD-UGV-02 | Loaded displacement, freeboard and stability margins&lt;br&gt;&lt;br&gt;Owner: systems engineering with allocated domain lead. Closure: analysis and&lt;br&gt;stakeholder review establish measurable limits and verification scenarios&lt;br&gt;before&lt;br&gt;G1. Status: open; no value inferred from artwork." style="rounded=1;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacing=18;fontSize=16;fontColor=#152b43;fillColor=#ffffff;strokeColor=#bac9d8;" vertex="1" parent="1">
+          <mxGeometry x="820" y="140" width="740" height="360" as="geometry" />
+        </mxCell>
+        <mxCell id="TBD-3" value="TBD-UGV-03 | Water propulsion choice and energy reserve&lt;br&gt;&lt;br&gt;Owner: systems engineering with allocated domain lead. Closure: analysis and&lt;br&gt;stakeholder review establish measurable limits and verification scenarios&lt;br&gt;before&lt;br&gt;G1. Status: open; no value inferred from artwork." style="rounded=1;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacing=18;fontSize=16;fontColor=#152b43;fillColor=#ffffff;strokeColor=#bac9d8;" vertex="1" parent="1">
+          <mxGeometry x="40" y="520" width="740" height="360" as="geometry" />
+        </mxCell>
+        <mxCell id="TBD-4" value="TBD-UGV-04 | Robot dimensions, mass, retention and ramp load/slope&lt;br&gt;&lt;br&gt;Owner: systems engineering with allocated domain lead. Closure: analysis and&lt;br&gt;stakeholder review establish measurable limits and verification scenarios&lt;br&gt;before&lt;br&gt;G1. Status: open; no value inferred from artwork." style="rounded=1;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacing=18;fontSize=16;fontColor=#152b43;fillColor=#ffffff;strokeColor=#bac9d8;" vertex="1" parent="1">
+          <mxGeometry x="820" y="520" width="740" height="360" as="geometry" />
+        </mxCell>
+        <mxCell id="TBD-5" value="TBD-UGV-05 | Selected agricultural task and crop constraints&lt;br&gt;&lt;br&gt;Owner: systems engineering with allocated domain lead. Closure: analysis and&lt;br&gt;stakeholder review establish measurable limits and verification scenarios&lt;br&gt;before&lt;br&gt;G1. Status: open; no value inferred from artwork." style="rounded=1;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacing=18;fontSize=16;fontColor=#152b43;fillColor=#ffffff;strokeColor=#bac9d8;" vertex="1" parent="1">
+          <mxGeometry x="40" y="900" width="740" height="360" as="geometry" />
+        </mxCell>
+        <mxCell id="TBD-6" value="TBD-UGV-06 | Communication-loss timing and minimum-risk behavior&lt;br&gt;&lt;br&gt;Owner: systems engineering with allocated domain lead. Closure: analysis and&lt;br&gt;stakeholder review establish measurable limits and verification scenarios&lt;br&gt;before&lt;br&gt;G1. Status: open; no value inferred from artwork." style="rounded=1;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacing=18;fontSize=16;fontColor=#152b43;fillColor=#ffffff;strokeColor=#bac9d8;" vertex="1" parent="1">
+          <mxGeometry x="820" y="900" width="740" height="360" as="geometry" />
+        </mxCell>
+        <mxCell id="TBD-7" value="TBD-UGV-07 | Autonomy level, exclusion zones and intervention limits&lt;br&gt;&lt;br&gt;Owner: systems engineering with allocated domain lead. Closure: analysis and&lt;br&gt;stakeholder review establish measurable limits and verification scenarios&lt;br&gt;before&lt;br&gt;G1. Status: open; no value inferred from artwork." style="rounded=1;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacing=18;fontSize=16;fontColor=#152b43;fillColor=#ffffff;strokeColor=#bac9d8;" vertex="1" parent="1">
+          <mxGeometry x="40" y="1280" width="740" height="360" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

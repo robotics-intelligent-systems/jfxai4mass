@@ -1,0 +1,87 @@
+<?xml version='1.0' encoding='utf-8'?>
+<mxfile host="app.diagrams.net" version="24.7.17" compressed="false">
+  <diagram id="opentwin-explorer-mobile-fixed-habitat-high-level-requirements-0" name="01 | Scope and provenance">
+    <mxGraphModel dx="1600" dy="1200" grid="1" gridSize="10" page="1" pageScale="1" pageWidth="1600" pageHeight="920">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="title" value="OpenTwin | Explorer mobile and fixed habitat | 01 | Scope and provenance" style="rounded=1;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacing=18;fontSize=24;fontColor=#ffffff;fillColor=#16324f;strokeColor=#bac9d8;" vertex="1" parent="1">
+          <mxGeometry x="40" y="20" width="1520" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="scope" value="SYSTEM BOUNDARY A mobile habitat and a fixed refuge share energy, water,&lt;br&gt;ventilation and sensor module interfaces. Vehicle and fixed-site hazards&lt;br&gt;require&lt;br&gt;separate acceptance.&lt;br&gt;&lt;br&gt;Source: MBSE/CAD/opentwin-explorer-mobile-fixed-habitat-digital-twin-&lt;br&gt;concept.jpg" style="rounded=1;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacing=18;fontSize=16;fontColor=#152b43;fillColor=#ffffff;strokeColor=#bac9d8;" vertex="1" parent="1">
+          <mxGeometry x="40" y="140" width="740" height="360" as="geometry" />
+        </mxCell>
+        <mxCell id="inherit" value="COMMON REQUIREMENTS&lt;br&gt;&lt;br&gt;Apply COM-01 through COM-09 from&lt;br&gt;opentwin-common-high-level-requirements.drawio.&lt;br&gt;&lt;br&gt;Verify common requirements in the configuration of this concept; cross-concept&lt;br&gt;reuse does not replace mission-specific evidence." style="rounded=1;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacing=18;fontSize=16;fontColor=#152b43;fillColor=#ffffff;strokeColor=#bac9d8;" vertex="1" parent="1">
+          <mxGeometry x="820" y="140" width="740" height="360" as="geometry" />
+        </mxCell>
+        <mxCell id="source" value="SOURCE AND STATUS&lt;br&gt;&lt;br&gt;Concept artwork and repository vision are input needs, not measured&lt;br&gt;engineering evidence.&lt;br&gt;&lt;br&gt;Baseline: proposed, 09 Oct 2026.&lt;br&gt;Source commit:&lt;br&gt;5b17496213385eb9b9bd3f5923c231a365667c88&lt;br&gt;&lt;br&gt;Owners shown are accountable roles to be assigned." style="rounded=1;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacing=18;fontSize=16;fontColor=#152b43;fillColor=#ffffff;strokeColor=#bac9d8;" vertex="1" parent="1">
+          <mxGeometry x="40" y="520" width="740" height="360" as="geometry" />
+        </mxCell>
+        <mxCell id="limits" value="OPEN DECISIONS&lt;br&gt;&lt;br&gt;Numerical limits, safety targets and applicable approval basis remain&lt;br&gt;unapproved.&lt;br&gt;&lt;br&gt;Do not inherit hydrogen, hydrojet, aerial mobility or rescue occupancy from&lt;br&gt;unrelated legacy diagrams.&lt;br&gt;&lt;br&gt;Candidate tools are replaceable implementations." style="rounded=1;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacing=18;fontSize=16;fontColor=#152b43;fillColor=#ffffff;strokeColor=#bac9d8;" vertex="1" parent="1">
+          <mxGeometry x="820" y="520" width="740" height="360" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="opentwin-explorer-mobile-fixed-habitat-high-level-requirements-1" name="02 | Concept requirements">
+    <mxGraphModel dx="1600" dy="1200" grid="1" gridSize="10" page="1" pageScale="1" pageWidth="1600" pageHeight="1680">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="title" value="OpenTwin | Explorer mobile and fixed habitat | 02 | Concept requirements" style="rounded=1;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacing=18;fontSize=24;fontColor=#ffffff;fillColor=#16324f;strokeColor=#bac9d8;" vertex="1" parent="1">
+          <mxGeometry x="40" y="20" width="1520" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="EXP-01" value="EXP-01 | Mobile habitat retention&lt;br&gt;&lt;br&gt;The mobile habitat shall retain installed equipment and stored supplies&lt;br&gt;throughout the approved travel load envelope.&lt;br&gt;&lt;br&gt;Acceptance: Analyze and test equipment mounts and vehicle stability for every&lt;br&gt;approved traveling configuration.&lt;br&gt;&lt;br&gt;Proposed owner: Vehicle / structures | Allocation: Mobile habitat" style="rounded=1;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacing=18;fontSize=16;fontColor=#152b43;fillColor=#ffffff;strokeColor=#bac9d8;" vertex="1" parent="1">
+          <mxGeometry x="40" y="140" width="740" height="360" as="geometry" />
+        </mxCell>
+        <mxCell id="EXP-02" value="EXP-02 | Fixed refuge integrity&lt;br&gt;&lt;br&gt;The fixed refuge shall maintain structural integrity for the approved site-&lt;br&gt;specific load cases.&lt;br&gt;&lt;br&gt;Acceptance: Review site, soil, drainage and structural evidence against&lt;br&gt;selected&lt;br&gt;occupancy and environmental loads.&lt;br&gt;&lt;br&gt;Proposed owner: Civil / structures | Allocation: Fixed refuge" style="rounded=1;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacing=18;fontSize=16;fontColor=#152b43;fillColor=#ffffff;strokeColor=#bac9d8;" vertex="1" parent="1">
+          <mxGeometry x="820" y="140" width="740" height="360" as="geometry" />
+        </mxCell>
+        <mxCell id="EXP-03" value="EXP-03 | Module reuse&lt;br&gt;&lt;br&gt;The habitat system shall support designated shared service modules in both&lt;br&gt;mobile and fixed installations.&lt;br&gt;&lt;br&gt;Acceptance: Install each shared module in both contexts and demonstrate&lt;br&gt;interface compatibility and isolation.&lt;br&gt;&lt;br&gt;Proposed owner: Integration | Allocation: Shared modules" style="rounded=1;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacing=18;fontSize=16;fontColor=#152b43;fillColor=#ffffff;strokeColor=#bac9d8;" vertex="1" parent="1">
+          <mxGeometry x="40" y="520" width="740" height="360" as="geometry" />
+        </mxCell>
+        <mxCell id="EXP-04" value="EXP-04 | Habitable environment&lt;br&gt;&lt;br&gt;Each occupied habitat shall maintain the approved indoor environmental&lt;br&gt;envelope&lt;br&gt;under declared occupancy and external conditions.&lt;br&gt;&lt;br&gt;Acceptance: Measure ventilation and indoor conditions in representative&lt;br&gt;occupancy, weather and degraded-service scenarios.&lt;br&gt;&lt;br&gt;Proposed owner: HVAC / human factors | Allocation: Ventilation / habitat" style="rounded=1;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacing=18;fontSize=16;fontColor=#152b43;fillColor=#ffffff;strokeColor=#bac9d8;" vertex="1" parent="1">
+          <mxGeometry x="820" y="520" width="740" height="360" as="geometry" />
+        </mxCell>
+        <mxCell id="EXP-05" value="EXP-05 | Water segregation&lt;br&gt;&lt;br&gt;Each habitat shall keep potable-water circuits isolated from wastewater&lt;br&gt;circuits&lt;br&gt;in all approved modes.&lt;br&gt;&lt;br&gt;Acceptance: Inspect circuits and test leakage, backflow protection, drainage&lt;br&gt;and&lt;br&gt;maintenance isolation.&lt;br&gt;&lt;br&gt;Proposed owner: Water systems | Allocation: Fresh / grey water" style="rounded=1;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacing=18;fontSize=16;fontColor=#152b43;fillColor=#ffffff;strokeColor=#bac9d8;" vertex="1" parent="1">
+          <mxGeometry x="40" y="900" width="740" height="360" as="geometry" />
+        </mxCell>
+        <mxCell id="EXP-06" value="EXP-06 | Emergency exit&lt;br&gt;&lt;br&gt;Each occupied habitat shall provide emergency egress when the normal entrance&lt;br&gt;is&lt;br&gt;unavailable.&lt;br&gt;&lt;br&gt;Acceptance: Block the normal entrance and demonstrate exit within approved&lt;br&gt;occupant and accessibility criteria.&lt;br&gt;&lt;br&gt;Proposed owner: Safety / human factors | Allocation: Access / egress" style="rounded=1;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacing=18;fontSize=16;fontColor=#152b43;fillColor=#ffffff;strokeColor=#bac9d8;" vertex="1" parent="1">
+          <mxGeometry x="820" y="900" width="740" height="360" as="geometry" />
+        </mxCell>
+        <mxCell id="EXP-07" value="EXP-07 | Service continuity&lt;br&gt;&lt;br&gt;Each habitat shall prioritize essential occupied-safety loads during loss of&lt;br&gt;its&lt;br&gt;primary energy supply.&lt;br&gt;&lt;br&gt;Acceptance: Interrupt primary supply and measure reserve provision, alarms and&lt;br&gt;prescribed degraded operation.&lt;br&gt;&lt;br&gt;Proposed owner: Energy / safety | Allocation: Energy / essential loads" style="rounded=1;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacing=18;fontSize=16;fontColor=#152b43;fillColor=#ffffff;strokeColor=#bac9d8;" vertex="1" parent="1">
+          <mxGeometry x="40" y="1280" width="740" height="360" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="opentwin-explorer-mobile-fixed-habitat-high-level-requirements-2" name="03 | Acceptance parameters">
+    <mxGraphModel dx="1600" dy="1200" grid="1" gridSize="10" page="1" pageScale="1" pageWidth="1600" pageHeight="1300">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="title" value="OpenTwin | Explorer mobile and fixed habitat | 03 | Acceptance parameters" style="rounded=1;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacing=18;fontSize=24;fontColor=#ffffff;fillColor=#16324f;strokeColor=#bac9d8;" vertex="1" parent="1">
+          <mxGeometry x="40" y="20" width="1520" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="TBD-1" value="TBD-EXP-01 | Occupancy, accessibility and stay duration&lt;br&gt;&lt;br&gt;Owner: systems engineering with allocated domain lead. Closure: analysis and&lt;br&gt;stakeholder review establish measurable limits and verification scenarios&lt;br&gt;before&lt;br&gt;G1. Status: open; no value inferred from artwork." style="rounded=1;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacing=18;fontSize=16;fontColor=#152b43;fillColor=#ffffff;strokeColor=#bac9d8;" vertex="1" parent="1">
+          <mxGeometry x="40" y="140" width="740" height="360" as="geometry" />
+        </mxCell>
+        <mxCell id="TBD-2" value="TBD-EXP-02 | Temperature, humidity, air-quality and ventilation limits&lt;br&gt;&lt;br&gt;Owner: systems engineering with allocated domain lead. Closure: analysis and&lt;br&gt;stakeholder review establish measurable limits and verification scenarios&lt;br&gt;before&lt;br&gt;G1. Status: open; no value inferred from artwork." style="rounded=1;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacing=18;fontSize=16;fontColor=#152b43;fillColor=#ffffff;strokeColor=#bac9d8;" vertex="1" parent="1">
+          <mxGeometry x="820" y="140" width="740" height="360" as="geometry" />
+        </mxCell>
+        <mxCell id="TBD-3" value="TBD-EXP-03 | Potable-water quality basis and storage demand&lt;br&gt;&lt;br&gt;Owner: systems engineering with allocated domain lead. Closure: analysis and&lt;br&gt;stakeholder review establish measurable limits and verification scenarios&lt;br&gt;before&lt;br&gt;G1. Status: open; no value inferred from artwork." style="rounded=1;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacing=18;fontSize=16;fontColor=#152b43;fillColor=#ffffff;strokeColor=#bac9d8;" vertex="1" parent="1">
+          <mxGeometry x="40" y="520" width="740" height="360" as="geometry" />
+        </mxCell>
+        <mxCell id="TBD-4" value="TBD-EXP-04 | Site loads, drainage, soil and refuge structural basis&lt;br&gt;&lt;br&gt;Owner: systems engineering with allocated domain lead. Closure: analysis and&lt;br&gt;stakeholder review establish measurable limits and verification scenarios&lt;br&gt;before&lt;br&gt;G1. Status: open; no value inferred from artwork." style="rounded=1;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacing=18;fontSize=16;fontColor=#152b43;fillColor=#ffffff;strokeColor=#bac9d8;" vertex="1" parent="1">
+          <mxGeometry x="820" y="520" width="740" height="360" as="geometry" />
+        </mxCell>
+        <mxCell id="TBD-5" value="TBD-EXP-05 | Mobile mass, travel limits and equipment retention&lt;br&gt;&lt;br&gt;Owner: systems engineering with allocated domain lead. Closure: analysis and&lt;br&gt;stakeholder review establish measurable limits and verification scenarios&lt;br&gt;before&lt;br&gt;G1. Status: open; no value inferred from artwork." style="rounded=1;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacing=18;fontSize=16;fontColor=#152b43;fillColor=#ffffff;strokeColor=#bac9d8;" vertex="1" parent="1">
+          <mxGeometry x="40" y="900" width="740" height="360" as="geometry" />
+        </mxCell>
+        <mxCell id="TBD-6" value="TBD-EXP-06 | Essential load reserve and module interchange time&lt;br&gt;&lt;br&gt;Owner: systems engineering with allocated domain lead. Closure: analysis and&lt;br&gt;stakeholder review establish measurable limits and verification scenarios&lt;br&gt;before&lt;br&gt;G1. Status: open; no value inferred from artwork." style="rounded=1;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacing=18;fontSize=16;fontColor=#152b43;fillColor=#ffffff;strokeColor=#bac9d8;" vertex="1" parent="1">
+          <mxGeometry x="820" y="900" width="740" height="360" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

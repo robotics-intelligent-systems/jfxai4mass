@@ -1,0 +1,81 @@
+<?xml version='1.0' encoding='utf-8'?>
+<mxfile host="app.diagrams.net" version="24.7.17" compressed="false">
+  <diagram id="opentwin-modular-armor-truck-high-level-requirements-0" name="01 | Scope and provenance">
+    <mxGraphModel dx="1600" dy="1200" grid="1" gridSize="10" page="1" pageScale="1" pageWidth="1600" pageHeight="920">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="title" value="OpenTwin | Modular armor truck | 01 | Scope and provenance" style="rounded=1;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacing=18;fontSize=24;fontColor=#ffffff;fillColor=#16324f;strokeColor=#bac9d8;" vertex="1" parent="1">
+          <mxGeometry x="40" y="20" width="1520" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="scope" value="SYSTEM BOUNDARY Modular protected ground vehicle with replaceable panels,&lt;br&gt;cabin,&lt;br&gt;cargo body and state monitoring. Protection level, threats and propulsion&lt;br&gt;technology require selection.&lt;br&gt;&lt;br&gt;Source: MBSE/CAD/opentwin-modular-armor-truck-digital-twin-concept.jpg" style="rounded=1;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacing=18;fontSize=16;fontColor=#152b43;fillColor=#ffffff;strokeColor=#bac9d8;" vertex="1" parent="1">
+          <mxGeometry x="40" y="140" width="740" height="360" as="geometry" />
+        </mxCell>
+        <mxCell id="inherit" value="COMMON REQUIREMENTS&lt;br&gt;&lt;br&gt;Apply COM-01 through COM-09 from&lt;br&gt;opentwin-common-high-level-requirements.drawio.&lt;br&gt;&lt;br&gt;Verify common requirements in the configuration of this concept; cross-concept&lt;br&gt;reuse does not replace mission-specific evidence." style="rounded=1;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacing=18;fontSize=16;fontColor=#152b43;fillColor=#ffffff;strokeColor=#bac9d8;" vertex="1" parent="1">
+          <mxGeometry x="820" y="140" width="740" height="360" as="geometry" />
+        </mxCell>
+        <mxCell id="source" value="SOURCE AND STATUS&lt;br&gt;&lt;br&gt;Concept artwork and repository vision are input needs, not measured&lt;br&gt;engineering evidence.&lt;br&gt;&lt;br&gt;Baseline: proposed, 09 Oct 2026.&lt;br&gt;Source commit:&lt;br&gt;5b17496213385eb9b9bd3f5923c231a365667c88&lt;br&gt;&lt;br&gt;Owners shown are accountable roles to be assigned." style="rounded=1;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacing=18;fontSize=16;fontColor=#152b43;fillColor=#ffffff;strokeColor=#bac9d8;" vertex="1" parent="1">
+          <mxGeometry x="40" y="520" width="740" height="360" as="geometry" />
+        </mxCell>
+        <mxCell id="limits" value="OPEN DECISIONS&lt;br&gt;&lt;br&gt;Numerical limits, safety targets and applicable approval basis remain&lt;br&gt;unapproved.&lt;br&gt;&lt;br&gt;Do not inherit hydrogen, hydrojet, aerial mobility or rescue occupancy from&lt;br&gt;unrelated legacy diagrams.&lt;br&gt;&lt;br&gt;Candidate tools are replaceable implementations." style="rounded=1;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacing=18;fontSize=16;fontColor=#152b43;fillColor=#ffffff;strokeColor=#bac9d8;" vertex="1" parent="1">
+          <mxGeometry x="820" y="520" width="740" height="360" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="opentwin-modular-armor-truck-high-level-requirements-1" name="02 | Concept requirements">
+    <mxGraphModel dx="1600" dy="1200" grid="1" gridSize="10" page="1" pageScale="1" pageWidth="1600" pageHeight="1300">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="title" value="OpenTwin | Modular armor truck | 02 | Concept requirements" style="rounded=1;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacing=18;fontSize=24;fontColor=#ffffff;fillColor=#16324f;strokeColor=#bac9d8;" vertex="1" parent="1">
+          <mxGeometry x="40" y="20" width="1520" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="ARM-01" value="ARM-01 | Ground mobility&lt;br&gt;&lt;br&gt;The vehicle shall provide propulsion, steering and braking throughout its&lt;br&gt;approved terrain and loading envelope.&lt;br&gt;&lt;br&gt;Acceptance: Analyze and test handling, braking and grade performance for the&lt;br&gt;worst approved payload and panel configuration.&lt;br&gt;&lt;br&gt;Proposed owner: Vehicle engineering | Allocation: Chassis / mobility" style="rounded=1;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacing=18;fontSize=16;fontColor=#152b43;fillColor=#ffffff;strokeColor=#bac9d8;" vertex="1" parent="1">
+          <mxGeometry x="40" y="140" width="740" height="360" as="geometry" />
+        </mxCell>
+        <mxCell id="ARM-02" value="ARM-02 | Panel interchange&lt;br&gt;&lt;br&gt;The vehicle shall permit replacement of designated protective panels through&lt;br&gt;documented mounting interfaces.&lt;br&gt;&lt;br&gt;Acceptance: Demonstrate panel exchange, correct installation and retention&lt;br&gt;under&lt;br&gt;approved structural loads.&lt;br&gt;&lt;br&gt;Proposed owner: Mechanical integration | Allocation: Panels / mounts" style="rounded=1;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacing=18;fontSize=16;fontColor=#152b43;fillColor=#ffffff;strokeColor=#bac9d8;" vertex="1" parent="1">
+          <mxGeometry x="820" y="140" width="740" height="360" as="geometry" />
+        </mxCell>
+        <mxCell id="ARM-03" value="ARM-03 | Protection objective&lt;br&gt;&lt;br&gt;The project shall specify a threat and protection acceptance basis for each&lt;br&gt;claimed protective configuration.&lt;br&gt;&lt;br&gt;Acceptance: Approve threat cases and assembly-level evaluation plan; close&lt;br&gt;performance evidence before making protection claims.&lt;br&gt;&lt;br&gt;Proposed owner: Protection / safety | Allocation: Cabin / protective assembly" style="rounded=1;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacing=18;fontSize=16;fontColor=#152b43;fillColor=#ffffff;strokeColor=#bac9d8;" vertex="1" parent="1">
+          <mxGeometry x="40" y="520" width="740" height="360" as="geometry" />
+        </mxCell>
+        <mxCell id="ARM-04" value="ARM-04 | Occupant egress&lt;br&gt;&lt;br&gt;The vehicle shall provide occupant emergency egress in each approved occupied&lt;br&gt;configuration.&lt;br&gt;&lt;br&gt;Acceptance: Demonstrate access and emergency exit with representative&lt;br&gt;occupants&lt;br&gt;and equipment under defined fault cases.&lt;br&gt;&lt;br&gt;Proposed owner: Human factors | Allocation: Cabin / access" style="rounded=1;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacing=18;fontSize=16;fontColor=#152b43;fillColor=#ffffff;strokeColor=#bac9d8;" vertex="1" parent="1">
+          <mxGeometry x="820" y="520" width="740" height="360" as="geometry" />
+        </mxCell>
+        <mxCell id="ARM-05" value="ARM-05 | Payload retention&lt;br&gt;&lt;br&gt;The vehicle shall retain cargo and installed modules under the approved&lt;br&gt;service&lt;br&gt;and emergency load cases.&lt;br&gt;&lt;br&gt;Acceptance: Analyze and test mounts with representative payloads and&lt;br&gt;configuration-specific mass and center of gravity.&lt;br&gt;&lt;br&gt;Proposed owner: Structures | Allocation: Cargo / chassis" style="rounded=1;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacing=18;fontSize=16;fontColor=#152b43;fillColor=#ffffff;strokeColor=#bac9d8;" vertex="1" parent="1">
+          <mxGeometry x="40" y="900" width="740" height="360" as="geometry" />
+        </mxCell>
+        <mxCell id="ARM-06" value="ARM-06 | Condition monitoring&lt;br&gt;&lt;br&gt;The system shall report the health of monitored vehicle and protective modules&lt;br&gt;with their configuration identity.&lt;br&gt;&lt;br&gt;Acceptance: Introduce monitored faults and verify detection, operator&lt;br&gt;indication&lt;br&gt;and twin association.&lt;br&gt;&lt;br&gt;Proposed owner: Sensors / twin | Allocation: Sensors / twin" style="rounded=1;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacing=18;fontSize=16;fontColor=#152b43;fillColor=#ffffff;strokeColor=#bac9d8;" vertex="1" parent="1">
+          <mxGeometry x="820" y="900" width="740" height="360" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="opentwin-modular-armor-truck-high-level-requirements-2" name="03 | Acceptance parameters">
+    <mxGraphModel dx="1600" dy="1200" grid="1" gridSize="10" page="1" pageScale="1" pageWidth="1600" pageHeight="1300">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="title" value="OpenTwin | Modular armor truck | 03 | Acceptance parameters" style="rounded=1;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacing=18;fontSize=24;fontColor=#ffffff;fillColor=#16324f;strokeColor=#bac9d8;" vertex="1" parent="1">
+          <mxGeometry x="40" y="20" width="1520" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="TBD-1" value="TBD-ARM-01 | Threat and protection basis&lt;br&gt;&lt;br&gt;Owner: systems engineering with allocated domain lead. Closure: analysis and&lt;br&gt;stakeholder review establish measurable limits and verification scenarios&lt;br&gt;before&lt;br&gt;G1. Status: open; no value inferred from artwork." style="rounded=1;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacing=18;fontSize=16;fontColor=#152b43;fillColor=#ffffff;strokeColor=#bac9d8;" vertex="1" parent="1">
+          <mxGeometry x="40" y="140" width="740" height="360" as="geometry" />
+        </mxCell>
+        <mxCell id="TBD-2" value="TBD-ARM-02 | Occupied capacity and emergency egress time&lt;br&gt;&lt;br&gt;Owner: systems engineering with allocated domain lead. Closure: analysis and&lt;br&gt;stakeholder review establish measurable limits and verification scenarios&lt;br&gt;before&lt;br&gt;G1. Status: open; no value inferred from artwork." style="rounded=1;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacing=18;fontSize=16;fontColor=#152b43;fillColor=#ffffff;strokeColor=#bac9d8;" vertex="1" parent="1">
+          <mxGeometry x="820" y="140" width="740" height="360" as="geometry" />
+        </mxCell>
+        <mxCell id="TBD-3" value="TBD-ARM-03 | Panel mass, interfaces and service load cases&lt;br&gt;&lt;br&gt;Owner: systems engineering with allocated domain lead. Closure: analysis and&lt;br&gt;stakeholder review establish measurable limits and verification scenarios&lt;br&gt;before&lt;br&gt;G1. Status: open; no value inferred from artwork." style="rounded=1;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacing=18;fontSize=16;fontColor=#152b43;fillColor=#ffffff;strokeColor=#bac9d8;" vertex="1" parent="1">
+          <mxGeometry x="40" y="520" width="740" height="360" as="geometry" />
+        </mxCell>
+        <mxCell id="TBD-4" value="TBD-ARM-04 | Payload, axle limits and center-of-gravity envelope&lt;br&gt;&lt;br&gt;Owner: systems engineering with allocated domain lead. Closure: analysis and&lt;br&gt;stakeholder review establish measurable limits and verification scenarios&lt;br&gt;before&lt;br&gt;G1. Status: open; no value inferred from artwork." style="rounded=1;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacing=18;fontSize=16;fontColor=#152b43;fillColor=#ffffff;strokeColor=#bac9d8;" vertex="1" parent="1">
+          <mxGeometry x="820" y="520" width="740" height="360" as="geometry" />
+        </mxCell>
+        <mxCell id="TBD-5" value="TBD-ARM-05 | Terrain, speed, braking and energy profile&lt;br&gt;&lt;br&gt;Owner: systems engineering with allocated domain lead. Closure: analysis and&lt;br&gt;stakeholder review establish measurable limits and verification scenarios&lt;br&gt;before&lt;br&gt;G1. Status: open; no value inferred from artwork." style="rounded=1;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacing=18;fontSize=16;fontColor=#152b43;fillColor=#ffffff;strokeColor=#bac9d8;" vertex="1" parent="1">
+          <mxGeometry x="40" y="900" width="740" height="360" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

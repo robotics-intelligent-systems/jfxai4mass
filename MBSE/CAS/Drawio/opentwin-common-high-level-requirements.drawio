@@ -1,0 +1,64 @@
+<?xml version='1.0' encoding='utf-8'?>
+<mxfile host="app.diagrams.net" version="24.7.17" compressed="false">
+  <diagram id="opentwin-common-high-level-requirements-0" name="01 | Common baseline">
+    <mxGraphModel dx="1600" dy="1200" grid="1" gridSize="10" page="1" pageScale="1" pageWidth="1600" pageHeight="2060">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="title" value="OpenTwin | Common high-level requirements | 01 | Common baseline" style="rounded=1;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacing=18;fontSize=24;fontColor=#ffffff;fillColor=#16324f;strokeColor=#bac9d8;" vertex="1" parent="1">
+          <mxGeometry x="40" y="20" width="1520" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="COM-01" value="COM-01 | Operational envelope&lt;br&gt;&lt;br&gt;The system shall define approved missions, actors, operating modes and&lt;br&gt;environmental limits for each configuration.&lt;br&gt;&lt;br&gt;Acceptance: Review mission scenarios, boundaries and measurable envelope; no&lt;br&gt;unresolved operating limit at release.&lt;br&gt;&lt;br&gt;Proposed owner: Systems engineering | Allocation: Mission / environment" style="rounded=1;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacing=18;fontSize=16;fontColor=#152b43;fillColor=#ffffff;strokeColor=#bac9d8;" vertex="1" parent="1">
+          <mxGeometry x="40" y="140" width="740" height="360" as="geometry" />
+        </mxCell>
+        <mxCell id="COM-02" value="COM-02 | Module interoperability&lt;br&gt;&lt;br&gt;The system shall provide versioned mechanical, power and data interface&lt;br&gt;contracts for interchangeable modules.&lt;br&gt;&lt;br&gt;Acceptance: Demonstrate module substitution against interface contracts,&lt;br&gt;including incompatible-module rejection.&lt;br&gt;&lt;br&gt;Proposed owner: Integration | Allocation: Interface control" style="rounded=1;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacing=18;fontSize=16;fontColor=#152b43;fillColor=#ffffff;strokeColor=#bac9d8;" vertex="1" parent="1">
+          <mxGeometry x="820" y="140" width="740" height="360" as="geometry" />
+        </mxCell>
+        <mxCell id="COM-03" value="COM-03 | Local fault response&lt;br&gt;&lt;br&gt;The system shall execute a defined local safe or degraded response to each&lt;br&gt;identified critical fault.&lt;br&gt;&lt;br&gt;Acceptance: Inject critical faults and connectivity loss; measured response&lt;br&gt;meets the approved fault-response matrix.&lt;br&gt;&lt;br&gt;Proposed owner: Safety / controls | Allocation: Safety control" style="rounded=1;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacing=18;fontSize=16;fontColor=#152b43;fillColor=#ffffff;strokeColor=#bac9d8;" vertex="1" parent="1">
+          <mxGeometry x="40" y="520" width="740" height="360" as="geometry" />
+        </mxCell>
+        <mxCell id="COM-04" value="COM-04 | Energy provision&lt;br&gt;&lt;br&gt;The system shall supply mission and essential safety loads within the approved&lt;br&gt;energy budget.&lt;br&gt;&lt;br&gt;Acceptance: Analyze and test worst-case coincident loads and reserve against&lt;br&gt;the&lt;br&gt;configured mission profile.&lt;br&gt;&lt;br&gt;Proposed owner: Energy engineering | Allocation: Energy" style="rounded=1;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacing=18;fontSize=16;fontColor=#152b43;fillColor=#ffffff;strokeColor=#bac9d8;" vertex="1" parent="1">
+          <mxGeometry x="820" y="520" width="740" height="360" as="geometry" />
+        </mxCell>
+        <mxCell id="COM-05" value="COM-05 | Twin identity and provenance&lt;br&gt;&lt;br&gt;The digital twin shall associate each state record with asset identity,&lt;br&gt;configuration, timestamp, source and validity.&lt;br&gt;&lt;br&gt;Acceptance: Replay records and reject or flag stale, missing and mismatched&lt;br&gt;states according to the data contract.&lt;br&gt;&lt;br&gt;Proposed owner: Data / twin | Allocation: OpenTwin" style="rounded=1;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacing=18;fontSize=16;fontColor=#152b43;fillColor=#ffffff;strokeColor=#bac9d8;" vertex="1" parent="1">
+          <mxGeometry x="40" y="900" width="740" height="360" as="geometry" />
+        </mxCell>
+        <mxCell id="COM-06" value="COM-06 | Model verification&lt;br&gt;&lt;br&gt;The project shall maintain versioned executable models and reproducible&lt;br&gt;scenarios for each claimed system capability.&lt;br&gt;&lt;br&gt;Acceptance: Reproduce model runs and correlate selected outputs with bench or&lt;br&gt;prototype data within approved tolerances.&lt;br&gt;&lt;br&gt;Proposed owner: Simulation / MBSE | Allocation: Simulation" style="rounded=1;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacing=18;fontSize=16;fontColor=#152b43;fillColor=#ffffff;strokeColor=#bac9d8;" vertex="1" parent="1">
+          <mxGeometry x="820" y="900" width="740" height="360" as="geometry" />
+        </mxCell>
+        <mxCell id="COM-07" value="COM-07 | Maintenance access&lt;br&gt;&lt;br&gt;The system shall provide documented inspection and replacement procedures for&lt;br&gt;serviceable modules.&lt;br&gt;&lt;br&gt;Acceptance: Demonstrate inspection and replacement using approved tools,&lt;br&gt;isolation steps and service limits.&lt;br&gt;&lt;br&gt;Proposed owner: Maintenance | Allocation: Lifecycle" style="rounded=1;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacing=18;fontSize=16;fontColor=#152b43;fillColor=#ffffff;strokeColor=#bac9d8;" vertex="1" parent="1">
+          <mxGeometry x="40" y="1280" width="740" height="360" as="geometry" />
+        </mxCell>
+        <mxCell id="COM-08" value="COM-08 | Command authorization&lt;br&gt;&lt;br&gt;The system shall accept control commands only from authenticated and&lt;br&gt;authorized&lt;br&gt;sources.&lt;br&gt;&lt;br&gt;Acceptance: Test unauthorized, replayed and malformed commands; verify&lt;br&gt;rejection&lt;br&gt;and event recording.&lt;br&gt;&lt;br&gt;Proposed owner: Security | Allocation: Control gateway" style="rounded=1;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacing=18;fontSize=16;fontColor=#152b43;fillColor=#ffffff;strokeColor=#bac9d8;" vertex="1" parent="1">
+          <mxGeometry x="820" y="1280" width="740" height="360" as="geometry" />
+        </mxCell>
+        <mxCell id="COM-09" value="COM-09 | Configuration traceability&lt;br&gt;&lt;br&gt;The project shall trace each requirement to its allocated element,&lt;br&gt;verification&lt;br&gt;result and released configuration.&lt;br&gt;&lt;br&gt;Acceptance: Audit complete requirement-to-evidence links and disposition of&lt;br&gt;failures before baseline release.&lt;br&gt;&lt;br&gt;Proposed owner: MBSE / quality | Allocation: Configuration" style="rounded=1;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacing=18;fontSize=16;fontColor=#152b43;fillColor=#ffffff;strokeColor=#bac9d8;" vertex="1" parent="1">
+          <mxGeometry x="40" y="1660" width="740" height="360" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="opentwin-common-high-level-requirements-1" name="02 | Baseline governance">
+    <mxGraphModel dx="1600" dy="1200" grid="1" gridSize="10" page="1" pageScale="1" pageWidth="1600" pageHeight="920">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="title" value="OpenTwin | Common high-level requirements | 02 | Baseline governance" style="rounded=1;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacing=18;fontSize=24;fontColor=#ffffff;fillColor=#16324f;strokeColor=#bac9d8;" vertex="1" parent="1">
+          <mxGeometry x="40" y="20" width="1520" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="status" value="PROPOSED BASELINE | 09 Oct 2026&lt;br&gt;&lt;br&gt;Applies by allocation to ARM, EXP and UGV concepts.&lt;br&gt;Requirements express proposed obligations, not demonstrated capabilities.&lt;br&gt;&lt;br&gt;All quantitative acceptance limits require approval before verification. A TBD&lt;br&gt;prevents requirement closure." style="rounded=1;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacing=18;fontSize=16;fontColor=#152b43;fillColor=#ffffff;strokeColor=#bac9d8;" vertex="1" parent="1">
+          <mxGeometry x="40" y="140" width="740" height="360" as="geometry" />
+        </mxCell>
+        <mxCell id="trace" value="TRACEABILITY&lt;br&gt;&lt;br&gt;Concept feature / stakeholder need → requirement ID → allocated element →&lt;br&gt;method / scenario → evidence ID → result → released configuration.&lt;br&gt;&lt;br&gt;Each evidence record includes model/software version, setup, date, measured&lt;br&gt;result and reviewer disposition." style="rounded=1;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacing=18;fontSize=16;fontColor=#152b43;fillColor=#ffffff;strokeColor=#bac9d8;" vertex="1" parent="1">
+          <mxGeometry x="820" y="140" width="740" height="360" as="geometry" />
+        </mxCell>
+        <mxCell id="tech" value="TECHNOLOGY SELECTION&lt;br&gt;&lt;br&gt;FreeCAD, Blender, CalculiX, OpenModelica, Project Chrono, ROS 2, OpenFOAM and&lt;br&gt;Godot/gdext are concept candidates.&lt;br&gt;&lt;br&gt;Tool labels do not establish integration or mandate a supplier. Compare tool&lt;br&gt;choices against interface and verification needs." style="rounded=1;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacing=18;fontSize=16;fontColor=#152b43;fillColor=#ffffff;strokeColor=#bac9d8;" vertex="1" parent="1">
+          <mxGeometry x="40" y="520" width="740" height="360" as="geometry" />
+        </mxCell>
+        <mxCell id="gate" value="REVIEW GATES&lt;br&gt;&lt;br&gt;G0: approve needs, scope, envelope, hazards and TBD owners.&lt;br&gt;G1: approve allocations, interfaces and acceptance limits.&lt;br&gt;G2: verify models and bench/SIL/HIL scenarios.&lt;br&gt;G3: controlled prototype validation and evidence closure.&lt;br&gt;&lt;br&gt;No operational capability claim before applicable evidence is accepted." style="rounded=1;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacing=18;fontSize=16;fontColor=#152b43;fillColor=#ffffff;strokeColor=#bac9d8;" vertex="1" parent="1">
+          <mxGeometry x="820" y="520" width="740" height="360" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
