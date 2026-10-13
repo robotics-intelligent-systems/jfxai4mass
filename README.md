@@ -801,3 +801,7 @@ Reproducible Simulation · Interoperability · Sustainable Engineering**
 > Simulate before deployment.  
 > Design interfaces before dependencies.  
 > Keep the architecture replaceable.
+
+## Concept migration · 13 October 2026
+
+The OpenTwin modular protected truck and ARM-01–06 baseline now belong to [jfxai4rffs](https://github.com/robotics-intelligent-systems/jfxai4rffs/blob/main/docs/requirements/emergency-response-support-concepts.md). Source history remains available; current requirements and CAD previews are maintained at the destination.

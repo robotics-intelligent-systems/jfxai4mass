@@ -10,7 +10,7 @@
       "acceptance": "Review mission scenarios, boundaries and measurable envelope; no unresolved operating limit at release.",
       "allocation": "Mission / environment",
       "status": "proposed",
-      "source": "README.md and common interpretation of three CAD concepts"
+      "source": "README.md and common interpretation of two retained CAD concepts"
     },
     {
       "id": "COM-02",
@@ -20,7 +20,7 @@
       "acceptance": "Demonstrate module substitution against interface contracts, including incompatible-module rejection.",
       "allocation": "Interface control",
       "status": "proposed",
-      "source": "README.md and common interpretation of three CAD concepts"
+      "source": "README.md and common interpretation of two retained CAD concepts"
     },
     {
       "id": "COM-03",
@@ -30,7 +30,7 @@
       "acceptance": "Inject critical faults and connectivity loss; measured response meets the approved fault-response matrix.",
       "allocation": "Safety control",
       "status": "proposed",
-      "source": "README.md and common interpretation of three CAD concepts"
+      "source": "README.md and common interpretation of two retained CAD concepts"
     },
     {
       "id": "COM-04",
@@ -40,7 +40,7 @@
       "acceptance": "Analyze and test worst-case coincident loads and reserve against the configured mission profile.",
       "allocation": "Energy",
       "status": "proposed",
-      "source": "README.md and common interpretation of three CAD concepts"
+      "source": "README.md and common interpretation of two retained CAD concepts"
     },
     {
       "id": "COM-05",
@@ -50,7 +50,7 @@
       "acceptance": "Replay records and reject or flag stale, missing and mismatched states according to the data contract.",
       "allocation": "OpenTwin",
       "status": "proposed",
-      "source": "README.md and common interpretation of three CAD concepts"
+      "source": "README.md and common interpretation of two retained CAD concepts"
     },
     {
       "id": "COM-06",
@@ -60,7 +60,7 @@
       "acceptance": "Reproduce model runs and correlate selected outputs with bench or prototype data within approved tolerances.",
       "allocation": "Simulation",
       "status": "proposed",
-      "source": "README.md and common interpretation of three CAD concepts"
+      "source": "README.md and common interpretation of two retained CAD concepts"
     },
     {
       "id": "COM-07",
@@ -70,7 +70,7 @@
       "acceptance": "Demonstrate inspection and replacement using approved tools, isolation steps and service limits.",
       "allocation": "Lifecycle",
       "status": "proposed",
-      "source": "README.md and common interpretation of three CAD concepts"
+      "source": "README.md and common interpretation of two retained CAD concepts"
     },
     {
       "id": "COM-08",
@@ -80,7 +80,7 @@
       "acceptance": "Test unauthorized, replayed and malformed commands; verify rejection and event recording.",
       "allocation": "Control gateway",
       "status": "proposed",
-      "source": "README.md and common interpretation of three CAD concepts"
+      "source": "README.md and common interpretation of two retained CAD concepts"
     },
     {
       "id": "COM-09",
@@ -90,67 +90,7 @@
       "acceptance": "Audit complete requirement-to-evidence links and disposition of failures before baseline release.",
       "allocation": "Configuration",
       "status": "proposed",
-      "source": "README.md and common interpretation of three CAD concepts"
-    },
-    {
-      "id": "ARM-01",
-      "title": "Ground mobility",
-      "statement": "The vehicle shall provide propulsion, steering and braking throughout its approved terrain and loading envelope.",
-      "owner": "Vehicle engineering",
-      "acceptance": "Analyze and test handling, braking and grade performance for the worst approved payload and panel configuration.",
-      "allocation": "Chassis / mobility",
-      "status": "proposed",
-      "source": "MBSE/CAD/opentwin-modular-armor-truck-digital-twin-concept.jpg"
-    },
-    {
-      "id": "ARM-02",
-      "title": "Panel interchange",
-      "statement": "The vehicle shall permit replacement of designated protective panels through documented mounting interfaces.",
-      "owner": "Mechanical integration",
-      "acceptance": "Demonstrate panel exchange, correct installation and retention under approved structural loads.",
-      "allocation": "Panels / mounts",
-      "status": "proposed",
-      "source": "MBSE/CAD/opentwin-modular-armor-truck-digital-twin-concept.jpg"
-    },
-    {
-      "id": "ARM-03",
-      "title": "Protection objective",
-      "statement": "The project shall specify a threat and protection acceptance basis for each claimed protective configuration.",
-      "owner": "Protection / safety",
-      "acceptance": "Approve threat cases and assembly-level evaluation plan; close performance evidence before making protection claims.",
-      "allocation": "Cabin / protective assembly",
-      "status": "proposed",
-      "source": "MBSE/CAD/opentwin-modular-armor-truck-digital-twin-concept.jpg"
-    },
-    {
-      "id": "ARM-04",
-      "title": "Occupant egress",
-      "statement": "The vehicle shall provide occupant emergency egress in each approved occupied configuration.",
-      "owner": "Human factors",
-      "acceptance": "Demonstrate access and emergency exit with representative occupants and equipment under defined fault cases.",
-      "allocation": "Cabin / access",
-      "status": "proposed",
-      "source": "MBSE/CAD/opentwin-modular-armor-truck-digital-twin-concept.jpg"
-    },
-    {
-      "id": "ARM-05",
-      "title": "Payload retention",
-      "statement": "The vehicle shall retain cargo and installed modules under the approved service and emergency load cases.",
-      "owner": "Structures",
-      "acceptance": "Analyze and test mounts with representative payloads and configuration-specific mass and center of gravity.",
-      "allocation": "Cargo / chassis",
-      "status": "proposed",
-      "source": "MBSE/CAD/opentwin-modular-armor-truck-digital-twin-concept.jpg"
-    },
-    {
-      "id": "ARM-06",
-      "title": "Condition monitoring",
-      "statement": "The system shall report the health of monitored vehicle and protective modules with their configuration identity.",
-      "owner": "Sensors / twin",
-      "acceptance": "Introduce monitored faults and verify detection, operator indication and twin association.",
-      "allocation": "Sensors / twin",
-      "status": "proposed",
-      "source": "MBSE/CAD/opentwin-modular-armor-truck-digital-twin-concept.jpg"
+      "source": "README.md and common interpretation of two retained CAD concepts"
     },
     {
       "id": "EXP-01",
@@ -322,5 +262,7 @@
       "status": "proposed",
       "source": "MBSE/CAD/opentwin-amphibious-ugv-agricultural-robot-digital-twin-concept.jpg"
     }
-  ]
+  ],
+  "reviewed_at": "2026-10-13",
+  "transferred_baseline": "https://github.com/robotics-intelligent-systems/jfxai4rffs/blob/main/docs/requirements/emergency-response-support-concepts.md"
 }

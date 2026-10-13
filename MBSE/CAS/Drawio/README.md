@@ -6,11 +6,10 @@ Proposed engineering baseline, 9 October 2026. Source commit: `5b17496213385eb9b
 
 | Concept source in `MBSE/CAD` | Current Draw.io baseline | Specific IDs | Common allocation |
 | --- | --- | --- | --- |
-| `opentwin-modular-armor-truck-digital-twin-concept.jpg` | [Modular armor truck](opentwin-modular-armor-truck-high-level-requirements.drawio) | ARM-01–06 | COM-01–09 |
 | `opentwin-explorer-mobile-fixed-habitat-digital-twin-concept.jpg` | [Explorer mobile and fixed habitat](opentwin-explorer-mobile-fixed-habitat-high-level-requirements.drawio) | EXP-01–07 | COM-01–09 |
 | `opentwin-amphibious-ugv-agricultural-robot-digital-twin-concept.jpg` | [Amphibious UGV and agricultural robot](opentwin-amphibious-ugv-agricultural-robot-high-level-requirements.drawio) | UGV-01–10 | COM-01–09 |
 
-[Common requirements and governance](opentwin-common-high-level-requirements.drawio) define shared obligations. The [machine-readable register](opentwin-high-level-requirements-register.json) contains all 32 requirements. Each concept diagram contains scope/provenance, concept requirements, and open acceptance parameters.
+[Common requirements and governance](opentwin-common-high-level-requirements.drawio) define shared obligations. The [machine-readable register](opentwin-high-level-requirements-register.json) contains 26 retained requirements. Each concept diagram contains scope/provenance, concept requirements, and open acceptance parameters.
 
 Requirements, allocations and role owners are proposed. Quantitative limits, actual individuals, safety targets and approval basis require review. No engineering test result is asserted. Concept features are interpreted as candidate needs rather than established performance. All TBDs must be resolved before G1; verification cannot close against an unspecified limit.
 
@@ -28,10 +27,14 @@ Requirements, allocations and role owners are proposed. Quantitative limits, act
 | `car-control-framework.drawio` | Retained as an architecture reference; sparse labels are not treated as verifiable requirements. |
 | Explorer | No directly corresponding earlier Draw.io baseline found; EXP requirements fill this coverage gap. |
 
-Three earlier requirement files carry a visible legacy notice. They remain separate concepts; the current baseline is the four files linked above. Historical source-image references are preserved as history and are not presented as current CAD evidence. This crosswalk records thematic reuse, not one-to-one equivalence or verification closure.
+Three earlier requirement files carry a visible legacy notice. They remain separate concepts; the current baseline is the three files linked above. Historical source-image references are preserved as history and are not presented as current CAD evidence. This crosswalk records thematic reuse, not one-to-one equivalence or verification closure.
 
 ## Verification workflow
 
 For each configuration, assign COM requirements and its concept requirements to engineering elements. Specify measurable acceptance thresholds and scenarios, then record evidence IDs, measured results, versioned configuration, reviewer and pass/fail disposition. Use inspection, analysis, simulation and controlled tests appropriate to the acceptance text. A simulation result alone does not validate physical capability.
 
 Candidate tools shown in CAD artwork remain replaceable: FreeCAD, Blender, CalculiX, OpenModelica, Project Chrono, ROS 2, OpenFOAM and Godot/gdext. No integration or performance is inferred from a tool label.
+
+## Protected-truck migration · 13 October 2026
+
+The truck artwork and ARM-01–06 Draw.io baseline now belong to [jfxai4rffs](https://github.com/robotics-intelligent-systems/jfxai4rffs/blob/main/docs/requirements/emergency-response-support-concepts.md). COM-01–09 were copied as a configuration-specific baseline; this repository retains COM, EXP and UGV requirements. ARM references in the historical crosswalk describe provenance, not current allocation.
